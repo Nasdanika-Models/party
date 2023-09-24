@@ -1,9 +1,9 @@
-module org.nasdanika.models.git.processors {
+module org.nasdanika.models.party.processors {
 		
-	requires transitive org.nasdanika.models.git;
+	requires transitive org.nasdanika.models.party;
 	requires transitive org.nasdanika.models.ecore.graph;
 	
-	exports org.nasdanika.models.git.processors;
-	opens org.nasdanika.models.git.processors; // For loading resources
+	exports org.nasdanika.models.party.processors;
+	opens org.nasdanika.models.party.processors; // For loading resources
 	
 }

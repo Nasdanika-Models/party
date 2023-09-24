@@ -1,11 +1,11 @@
-package org.nasdanika.models.git.processors;
+package org.nasdanika.models.party.processors;
 
 import org.nasdanika.common.Context;
 import org.nasdanika.models.ecore.graph.processors.EPackageNodeProcessorFactory;
-import org.nasdanika.models.git.GitPackage;
+import org.nasdanika.models.party.PartyPackage;
 
-@EPackageNodeProcessorFactory(nsURI = GitPackage.eNS_URI)
-public class EcoreGenGitProcessorsFactory {
+@EPackageNodeProcessorFactory(nsURI = PartyPackage.eNS_URI)
+public class EcoreGenPartyProcessorsFactory {
 
 	private Context context;
 	
@@ -13,7 +13,7 @@ public class EcoreGenGitProcessorsFactory {
 //	public final AccessLevelProcessorsFactory accessLevelFactory;
 
 	
-	public EcoreGenGitProcessorsFactory(Context context) {
+	public EcoreGenPartyProcessorsFactory(Context context) {
 //		accessLevelProcessorsFactory = new AccessLevelProcessorsFactory(context);
 	}
 	

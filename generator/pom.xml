@@ -7,20 +7,20 @@
 		<artifactId>parent</artifactId>
 		<relativePath>..</relativePath>
 	</parent>
-	<artifactId>processors</artifactId>
+	<artifactId>generator</artifactId>
 	<packaging>jar</packaging>
-	<name>Node processors</name>
+	<name>Documentation generator</name>
 	<dependencies>
 		<dependency>
 			<groupId>${project.groupId}</groupId>
-			<artifactId>model</artifactId>
+			<artifactId>processors</artifactId>
 			<version>${project.version}</version>
 		</dependency>		
 		<dependency>
-			<groupId>org.nasdanika.models.ecore</groupId>
-			<artifactId>graph</artifactId>
-			<version>${models.ecore.version}</version>
-		</dependency>		
+			<groupId>org.nasdanika</groupId>
+			<artifactId>plantuml-diagram-generator</artifactId>
+			<version>2023.9.1</version>
+		</dependency>
 	</dependencies>
 </project>
 

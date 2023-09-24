@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="EN">
+  <head>
+    <title>Search</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cerulean/bootstrap.min.css" id="nsd-bootstrap-theme-stylesheet"/>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Nasdanika/html@master/model/app.gen/web-resources/css/app.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jstree@3.3.11/dist/themes/default/style.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@5.1.0/github-markdown.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.3.1/build/styles/default.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-vue@2.21.2/dist/bootstrap-vue.css"/>
+    <script src="https://cdn.jsdelivr.net/gh/Nasdanika/html@master/model/app.gen/web-resources/js/common.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Nasdanika/html@master/model/app.gen/web-resources/js/dark-head.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jstree@3.3.11/dist/jstree.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.3.1/build/highlight.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-vue@2.21.2/dist/bootstrap-vue.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Nasdanika/html@master/model/app.gen/web-resources/js/components/table.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/components/table.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.4.3/echarts.min.js"></script><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9BRJVLK8CC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-9BRJVLK8CC');
+</script>    
+</head>
+  <body>
+    <div class="container-fluid nsd-app-container">
+      <div class="row">
+        <div class="col nsd-app-header">
+          <a href="https://github.com/Nasdanika-Models" data-nsd-label-uuid="d1944ef9-5bcc-4aaa-8ac5-597009c4194f" class="nsd-app-header-title">
+            <img src="https://docs.nasdanika.org/images/nasdanika-logo.png" class="nsd-app-label-icon"/>Nasdanika Models</a>
+          <ul class="nav nsd-app-header-navs">
+            <li class="nav-item"><span data-nsd-label-uuid="5eeb76ac-7fe5-4fd2-81a1-c2b427f94e80" class="navbar-text"><span class="fas fa-search nsd-app-label-icon"></span>Search</span>
+            </li>
+            <li class="nav-item">
+              <a href="glossary.html" data-nsd-label-uuid="29a858b2-425e-496f-b560-fbcbbc5f1906" class="nav-link"><span class="fas fa-book nsd-app-label-icon"></span>Glossary</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col nsd-app-navbar">
+          <ul class="navbar navbar-light navbar-expand-lg">
+            <a href="index.html" data-nsd-label-uuid="b9f79148-2b95-431b-8be6-48e29b28a051" class="navbar-brand">
+              <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EPackage.gif" class="nsd-app-label-icon"/>party</a>
+            <button type="button" data-toggle="collapse" data-target="#nsd_gn" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="nsd_gn" class="collapse navbar-collapse">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a href="classifiers.html" data-nsd-label-uuid="f9617485-184e-4e98-8ce0-e2471e11790d" class="nav-link">Classifiers</a>
+                </li>
+                <li class="nav-item">
+                  <a href="diagram.html" data-nsd-label-uuid="b6367d87-e2fd-4655-a5f9-9786c3688401" class="nav-link"><span class="fas fa-project-diagram nsd-app-label-icon"></span>Diagram</a>
+                </li>
+                <li class="nav-item">
+                  <li data-nsd-label-uuid="a9cf09e9-dc52-4325-a27c-2b07af86183c" class="dropdown">
+                    <a role="button" data-toggle="dropdown" class="nav-link dropdown-toggle">
+                      <img src="https://img.icons8.com/external-dreamstale-lineal-dreamstale/16/external-diagram-seo-media-dreamstale-lineal-dreamstale.png" class="nsd-app-label-icon"/>Graphs</a>
+                    <div class="dropdown-menu">
+                      <a href="default-graph.html" data-nsd-label-uuid="62bbc31e-03fc-4cac-a5b1-e1684559918f" class="dropdown-item">Default Graph</a>
+                      <a href="circular-layout-graph.html" data-nsd-label-uuid="12646a2c-8980-4862-8d37-a3825784829a" class="dropdown-item">Circular Graph</a>
+                      <a href="force-layout-graph.html" data-nsd-label-uuid="06ebe68b-c5de-449e-8aca-3c2fc85b6974" class="dropdown-item">Force Graph</a>
+                      <div title="With dependencies and sub-packages" class="dropdown-divider"></div>
+                      <a href="default-graph-with-dependencies-and-subpackages.html" data-nsd-label-uuid="a34dad85-5d54-4d59-ae1e-a7d700b4ced7" class="dropdown-item">Default Graph</a>
+                      <a href="circular-layout-graph-with-dependencies-and-subpackages.html" data-nsd-label-uuid="8c65c5e4-5f73-49f6-a0db-7732ee508560" class="dropdown-item">Circular Graph</a>
+                      <a href="force-layout-graph-with-dependencies-and-subpackages.html" data-nsd-label-uuid="11ca1906-7b24-4459-9a1c-99211fdab0d3" class="dropdown-item">Force Graph</a>
+                    </div>
+                  </li>
+                </li>
+              </ul>
+            </div>
+          </ul>
+        </div>
+      </div>
+      <div class="row nsd-app-content-row">
+        <div class="col nsd-app-navigation-panel">
+          <div class="list-group list-group-flush">
+            <a href="references/eClassifiers/ContactMethod/index.html" title="Generic contact method." data-nsd-label-uuid="e8e7abc7-00bf-4e8d-a5dd-57139db674fa" class="list-group-item list-group-action">
+              <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon"/>ContactMethod</a>
+            <a href="references/eClassifiers/EMail/index.html" title="E-mail address." data-nsd-label-uuid="bb99485b-1577-4a5f-a111-1c15aa48ceb8" class="list-group-item list-group-action">
+              <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon"/>EMail</a>
+            <a href="references/eClassifiers/Organization/index.html" title="A grop of parties in roles collaborating to achieve some goal or perform some function " data-nsd-label-uuid="32e09b61-7af3-44bb-ba99-938c569a65a5" class="list-group-item list-group-action">
+              <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon"/>Organization</a>
+            <a href="references/eClassifiers/Party/index.html" title="Something that can particpate/play role in something - a person, organization, system" data-nsd-label-uuid="d0819f45-53a1-400c-918b-73229033675e" class="list-group-item list-group-action">
+              <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon"/><i>Party</i></a>
+            <a href="references/eClassifiers/Person/index.html" title="A human party." data-nsd-label-uuid="13d60730-fb11-4d97-a861-00786a14c699" class="list-group-item list-group-action">
+              <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon"/>Person</a>
+            <a href="references/eClassifiers/Phone/index.html" title="Phone." data-nsd-label-uuid="e7e82097-761f-4f0d-b2f3-f89c28b44c03" class="list-group-item list-group-action">
+              <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon"/>Phone</a>
+            <a href="references/eClassifiers/PostalAddress/index.html" title="Postal Address." data-nsd-label-uuid="c5a03e71-9ac4-4a42-9fae-964577fb3ecd" class="list-group-item list-group-action">
+              <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon"/>PostalAddress</a>
+            <a href="references/eClassifiers/Role/index.html" title="A role played by a party in an organization. Subclasses may reference a shared role definition" data-nsd-label-uuid="b704f1d7-a641-40e9-9604-fbb7c8be813c" class="list-group-item list-group-action">
+              <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon"/>Role</a>
+            <a href="references/eClassifiers/WebAddress/index.html" title="URL." data-nsd-label-uuid="b2f984ed-720c-46a0-b7b8-8e15b8ce908f" class="list-group-item list-group-action">
+              <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon"/>WebAddress</a>
+          </div>
+        </div>
+        <div data-nsd-label-uuid="5eeb76ac-7fe5-4fd2-81a1-c2b427f94e80" data-nsd-action-uris="uuid:5eeb76ac-7fe5-4fd2-81a1-c2b427f94e80" class="col nsd-app-content-panel">
+          <div class="container-fluid">
+            <div class="row nsd-app-content-panel-title-and-items-row">
+              <div class="col-auto">
+                <H1><span data-nsd-label-uuid="5eeb76ac-7fe5-4fd2-81a1-c2b427f94e80" class="nsd-app-content-panel-title"><span class="fas fa-search nsd-app-label-icon"></span>Search</span>
+                </H1>
+              </div>
+            </div>
+            <div class="row nsd-app-content-panel-content-row">
+              <div class="col">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col">		<script src="https://cdn.jsdelivr.net/gh/olivernn/lunr.js@v2.3.9/lunr.js"></script>     
+		<script src="search-documents.js"></script>     
+     	<div id="search-app" class="container-fluid">
+     		<div class="row">
+     			<div class="col">
+					<b-form-group
+			          label="Filter"
+			          label-for="filter-input"
+			          label-cols-sm="3"
+			          label-align-sm="right"
+			          label-size="sm"
+			          class="mb-0"
+					  description="You can use wildcards, e.g. 'foo*' or 'f*o'; title or content fields, e.g. 'title:foo* bar'; boosts, e.g. 'foo^10 bar'; fuzzy matches, e.g. 'foo~1'; and term presence, e.g. '+foo bar -baz'"	          
+			        >
+			          <b-input-group size="sm">
+			            <b-form-input
+			              id="filter-input"
+			              v-model="filter"
+			              type="search"
+			              placeholder="Type to Search"
+			              debounce="700"
+			            ></b-form-input>
+			
+			            <b-input-group-append>
+			              <b-button :disabled="!filter" @click="filter = ''">Clear</b-button>
+			            </b-input-group-append>
+			          </b-input-group>
+			        </b-form-group>		
+     			</div>     		
+     		</div>
+	        
+	        <div class="row flex-nowrap">
+	        	<div class="col-auto border-right border-secondary pb-1">
+	        		<div id="nsd-site-map-tree">
+	        		</div>
+	        	</div>
+	        	<div class="col">
+			        <b-card 
+			        	v-for="searchResult in searchResults" 
+			        	:header-html="searchResult.title" 
+			        	:footer="searchResult.path"
+			        	class="my-1"
+			        	>
+			        	
+			        	<b-card-text><span v-html="searchResult.content"></span></b-card-text>
+			        </b-card>
+	        	</div>
+	        </div>	        
+     	</div>
+     
+		<script>		      
+			new Vue({
+				  el: '#search-app',
+				  data: {
+			        	filter: null,
+				      searchIndex : lunr(function () {
+						  this.ref('url');
+						  this.field('title');
+						  this.field('content');
+						  this.metadataWhitelist = ['position'];
+	
+						  for (const key in searchDocuments) {
+							  let doc = searchDocuments[key];
+							this.add({
+								url: key,
+								title: doc.title,
+								path: doc.path,
+								content: doc.content
+							});  
+						  }
+						})
+				  },				  
+				  computed: {
+					searchResults: function() {
+						if (this.filter) {
+							let searchResult = this.searchIndex.search(this.filter);
+							let actionUuids = searchResult.map(match => searchDocuments[match.ref]['action-uuid']).join(" ");
+							setTimeout(() => {
+								let treeSearchCallback = $('#nsd-site-map-tree').jstree(true).search;
+								if (treeSearchCallback) {
+									$('#nsd-site-map-tree').jstree(true).search(actionUuids);								
+								}
+							});
+							
+							return searchResult.map(function(e) {
+								let doc = searchDocuments[e.ref];
+								let titleMatches = [];
+								let contentMatches = [];
+								let matchMetaData = e.matchData.metadata;
+								for (const term in matchMetaData) {
+									if (matchMetaData[term]['title']) {
+										let positions = matchMetaData[term]['title'].position;
+										for (const match in positions) {
+											titleMatches.push(positions[match]);
+										}										
+									}
+									if (matchMetaData[term]['content']) {
+										let positions = matchMetaData[term]['content'].position;
+										for (const match in positions) {
+											contentMatches.push(positions[match]);
+										}										
+									}
+								}
+								
+								// Title highlighting
+								titleMatches.sort(function (a, b) { return a[0] - b[0] });
+								let titleElements = [];
+								let idx = 0;
+								for (const matchIdx in titleMatches) {
+									let match = titleMatches[matchIdx];
+									if (match[0] > idx) {
+										titleElements.push(doc.title.substring(idx, match[0]));
+									}
+									idx =  match[0] + match[1];
+									titleElements.push(`<span class='nsd-mark'>${doc.title.substring(match[0], idx)}</span>`);
+								}
+								if (idx < doc.title.length - 1) {
+									titleElements.push(doc.title.substring(idx, doc.title.length));
+								}
+								
+								// Content ellipsing and highlighting
+								contentMatches.sort(function (a, b) { return a[0] - b[0] });
+								let contentElements = [];
+								let snippetLength = 10;
+								idx = 0;
+								for (const matchIdx in contentMatches) {
+									let match = contentMatches[matchIdx];
+									if (match[0] > idx) {
+										let words = doc.content.substring(idx, match[0]).split(' ');
+										let snippetedWords = [];
+										if (idx == 0) {
+											if (words.length <= snippetLength) {
+												snippetedWords = words;
+											} else {
+												snippetedWords.push("&hellip;");
+												words.slice(words.length - snippetLength, words.length).forEach(e => snippetedWords.push(e));
+											}
+										} else {
+											if (words.length <= snippetLength * 2) {
+												snippetedWords = words;
+											} else {
+												words.slice(0, snippetLength).forEach(e => snippetedWords.push(e));
+												snippetedWords.push("&hellip;");
+												words.slice(words.length - snippetLength, words.length).forEach(e => snippetedWords.push(e));
+											}
+											
+										}
+										contentElements.push(snippetedWords.join(' '));
+									}
+									idx =  match[0] + match[1];
+									contentElements.push(`<span class='nsd-mark'>${doc.content.substring(match[0], idx)}</span>`);
+								}
+								if (idx < doc.content.length - 1) {
+									let words = doc.content.substring(idx, doc.content.length).split(' ');
+									if (idx == 0) {
+										if (words.length < snippetLength * 2) {
+											contentElements.push(doc.content);
+										} else {
+											let snippetedWords = [];
+											words.slice(0, snippetLength * 2).forEach(e => snippetedWords.push(e));
+											snippetedWords.push("&hellip;");
+											contentElements.push(snippetedWords.join(' '));
+										}
+									} else {
+										let snippetedWords = [];
+										if (words.length <= snippetLength) {
+											snippetedWords = words;
+										} else {
+											words.slice(0, snippetLength).forEach(e => snippetedWords.push(e));
+											snippetedWords.push("&hellip;");
+										}
+										contentElements.push(snippetedWords.join(' '));
+									}
+								}
+								return {
+									title: `<h5><a href="${e.ref}">${titleElements.join('')}</a></h5>`,
+									path: doc.path,
+									content: contentElements.join('')
+								};									
+							});
+						} 
+						setTimeout(() => {
+							let treeSearchCallback = $('#nsd-site-map-tree').jstree(true).search;
+							if (treeSearchCallback) {
+								$('#nsd-site-map-tree').jstree(true).search('');								
+							}
+						});
+						return [];
+					}  
+				  }
+			});   			
+		</script>
+		
+
+<script>$(document).ready( function() {
+$('#nsd-site-map-tree').jstree(function(tree) { tree.state.filter = function(state) { delete state.core.selected; return state; }; tree.search.search_callback = (results, node) => results.split(' ').includes(node.original['data-nsd-label-uuid']); return tree; }({"core":{"data":[{"a_attr":{"onclick":"window.location='https://github.com/Nasdanika-Models';"},"children":[{"children":[{"data-nsd-label-uuid":"5eeb76ac-7fe5-4fd2-81a1-c2b427f94e80","icon":"fas fa-search","id":"6fbfeea1-be91-41d3-b3c5-0d8ff6b2e83a","text":"Search","type":"leaf"},{"a_attr":{"onclick":"window.location='glossary.html';"},"data-nsd-label-uuid":"29a858b2-425e-496f-b560-fbcbbc5f1906","icon":"fas fa-book","id":"256bcf26-da44-4f3f-9fe4-790c8c52cf9f","text":"Glossary","type":"leaf"}],"text":"Children"},{"children":[{"a_attr":{"onclick":"window.location='https://github.com/Nasdanika-Models/party';"},"data-nsd-label-uuid":"f17fe4ca-1271-4ec1-954c-129c00c8a002","icon":"fab fa-github","id":"79a11ac9-d3b3-49ed-ad04-f4f67951f8e4","text":"Sources","type":"leaf"}],"text":"Navigation"}],"data-nsd-label-uuid":"d1944ef9-5bcc-4aaa-8ac5-597009c4194f","icon":"https://docs.nasdanika.org/images/nasdanika-logo.png","id":"82da5dc2-8703-43eb-b0f7-7aab28edf16f","text":"Nasdanika Models","type":"leaf"},{"a_attr":{"onclick":"window.location='index.html';"},"children":[{"children":[{"a_attr":{"onclick":"window.location='references/eClassifiers/ContactMethod/index.html';"},"data-nsd-label-uuid":"e8e7abc7-00bf-4e8d-a5dd-57139db674fa","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"f9d5cc7a-1375-4c55-8593-ead2d69e5c9d","text":"ContactMethod","type":"leaf"},{"a_attr":{"onclick":"window.location='references/eClassifiers/EMail/index.html';"},"children":[{"children":[{"a_attr":{"onclick":"window.location='references/eClassifiers/EMail/references/eStructuralFeatures/eMailAddress/index.html';"},"data-nsd-label-uuid":"50b2f74d-84cb-4ae1-8566-7b218c1b668e","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EAttribute.gif","id":"beb3228a-ae47-471c-b52c-dc708087c3f5","text":"eMailAddress","type":"leaf"}],"text":"E structural features"}],"data-nsd-label-uuid":"bb99485b-1577-4a5f-a111-1c15aa48ceb8","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"d0fff4fc-f81d-4b16-848a-639187055386","text":"EMail","type":"leaf"},{"a_attr":{"onclick":"window.location='references/eClassifiers/Organization/index.html';"},"children":[{"children":[{"a_attr":{"onclick":"window.location='references/eClassifiers/Organization/references/eStructuralFeatures/roles/index.html';"},"data-nsd-label-uuid":"d0ab4a87-ebda-4940-b37d-11caf987bd43","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EReference.gif","id":"ccffa942-10e9-4d60-95ee-f44431e46471","text":"roles","type":"leaf"}],"text":"E structural features"}],"data-nsd-label-uuid":"32e09b61-7af3-44bb-ba99-938c569a65a5","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"dee04a8d-2451-4835-a26b-68425a8ec15c","text":"Organization","type":"leaf"},{"a_attr":{"onclick":"window.location='references/eClassifiers/Party/index.html';"},"children":[{"children":[{"a_attr":{"onclick":"window.location='references/eClassifiers/Party/references/eStructuralFeatures/contactMethods/index.html';"},"data-nsd-label-uuid":"7c387ccc-94bd-4d31-8300-6fc8d26f7795","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EReference.gif","id":"6673b852-ef2b-4312-8f40-72a64f7ac379","text":"contactMethods","type":"leaf"}],"text":"E structural features"}],"data-nsd-label-uuid":"d0819f45-53a1-400c-918b-73229033675e","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"ac7d68be-8e5f-483f-971a-b0baca701cd6","text":"<i>Party<\/i>","type":"leaf"},{"a_attr":{"onclick":"window.location='references/eClassifiers/Person/index.html';"},"data-nsd-label-uuid":"13d60730-fb11-4d97-a861-00786a14c699","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"f0a51d18-1585-4362-821e-67d80dde6be0","text":"Person","type":"leaf"},{"a_attr":{"onclick":"window.location='references/eClassifiers/Phone/index.html';"},"children":[{"children":[{"a_attr":{"onclick":"window.location='references/eClassifiers/Phone/references/eStructuralFeatures/areaCode/index.html';"},"data-nsd-label-uuid":"801391f9-6a33-4d19-a89f-7f3642e8ca37","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EAttribute.gif","id":"e5523ee9-e99e-4dbb-b5e7-860129d604d2","text":"areaCode","type":"leaf"},{"a_attr":{"onclick":"window.location='references/eClassifiers/Phone/references/eStructuralFeatures/countryCode/index.html';"},"data-nsd-label-uuid":"e9865dbf-fa46-4c5c-bb6b-e3d5c3e83f0b","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EAttribute.gif","id":"8cda8809-7b34-46ee-a98c-25d71cef4e7a","text":"countryCode","type":"leaf"},{"a_attr":{"onclick":"window.location='references/eClassifiers/Phone/references/eStructuralFeatures/phoneNumber/index.html';"},"data-nsd-label-uuid":"9ad57ec3-8df5-4117-8ecd-18e0d75ee91f","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EAttribute.gif","id":"69af441f-b65f-4e04-becc-56406ced7275","text":"phoneNumber","type":"leaf"},{"a_attr":{"onclick":"window.location='references/eClassifiers/Phone/references/eStructuralFeatures/extension/index.html';"},"data-nsd-label-uuid":"68db0182-5ee1-4b69-a7a2-4cc985f34fd4","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EAttribute.gif","id":"01972bbe-bc5a-432d-9cab-2aa2025607aa","text":"extension","type":"leaf"}],"text":"E structural features"}],"data-nsd-label-uuid":"e7e82097-761f-4f0d-b2f3-f89c28b44c03","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"e1727f2b-8a2b-4c3f-a4d8-153f7818e34d","text":"Phone","type":"leaf"},{"a_attr":{"onclick":"window.location='references/eClassifiers/PostalAddress/index.html';"},"children":[{"children":[{"a_attr":{"onclick":"window.location='references/eClassifiers/PostalAddress/references/eStructuralFeatures/city/index.html';"},"data-nsd-label-uuid":"76b9a696-4d12-46fe-bcb4-fe81a7a6b620","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EAttribute.gif","id":"2ab16f92-dbdc-4c1f-a53c-11f52726192f","text":"city","type":"leaf"},{"a_attr":{"onclick":"window.location='references/eClassifiers/PostalAddress/references/eStructuralFeatures/line2/index.html';"},"data-nsd-label-uuid":"9da1b14e-9a56-4dcf-9160-acdbbfde1ba8","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EAttribute.gif","id":"daa58f74-0556-4590-9fc7-ba857ec20592","text":"line2","type":"leaf"},{"a_attr":{"onclick":"window.location='references/eClassifiers/PostalAddress/references/eStructuralFeatures/country/index.html';"},"data-nsd-label-uuid":"0122fbe2-483f-4ccf-bb43-eb9e14ac0da2","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EAttribute.gif","id":"ccca704c-b5a3-4cb8-885d-8cc948768c7f","text":"country","type":"leaf"},{"a_attr":{"onclick":"window.location='references/eClassifiers/PostalAddress/references/eStructuralFeatures/line1/index.html';"},"data-nsd-label-uuid":"8019da48-0697-4334-b437-5d6f59b097d8","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EAttribute.gif","id":"3b55148d-9dda-41a3-87e7-905c7d91c8cb","text":"line1","type":"leaf"},{"a_attr":{"onclick":"window.location='references/eClassifiers/PostalAddress/references/eStructuralFeatures/postalCode/index.html';"},"data-nsd-label-uuid":"8de2ee91-b5e5-4c90-9ac1-2b941ece86ed","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EAttribute.gif","id":"12f83abc-f2c2-41a7-b609-cd0a317d2fb6","text":"postalCode","type":"leaf"},{"a_attr":{"onclick":"window.location='references/eClassifiers/PostalAddress/references/eStructuralFeatures/stateProvince/index.html';"},"data-nsd-label-uuid":"dd305f73-7a55-4e81-b289-ca5e9bcd94d8","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EAttribute.gif","id":"6755b93b-b8d4-41ba-ae0b-b34b0ec1ed7e","text":"stateProvince","type":"leaf"}],"text":"E structural features"}],"data-nsd-label-uuid":"c5a03e71-9ac4-4a42-9fae-964577fb3ecd","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"187c0508-9d5b-4794-b309-705b70feca58","text":"PostalAddress","type":"leaf"},{"a_attr":{"onclick":"window.location='references/eClassifiers/Role/index.html';"},"children":[{"children":[{"a_attr":{"onclick":"window.location='references/eClassifiers/Role/references/eStructuralFeatures/players/index.html';"},"data-nsd-label-uuid":"086121a1-3aca-4db3-b8ae-4180acc0c76b","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EReference.gif","id":"a6761c2f-d3b3-48cf-ac5b-d7d7505651aa","text":"players","type":"leaf"}],"text":"E structural features"}],"data-nsd-label-uuid":"b704f1d7-a641-40e9-9604-fbb7c8be813c","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"a5534f96-6622-45a0-958d-b7b34b7aa78e","text":"Role","type":"leaf"},{"a_attr":{"onclick":"window.location='references/eClassifiers/WebAddress/index.html';"},"children":[{"children":[{"a_attr":{"onclick":"window.location='references/eClassifiers/WebAddress/references/eStructuralFeatures/url/index.html';"},"data-nsd-label-uuid":"82235158-bf4a-4d40-a7c8-da958c5d0b20","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EAttribute.gif","id":"731eb51b-d038-44ab-b46e-b961e719f420","text":"url","type":"leaf"}],"text":"E structural features"}],"data-nsd-label-uuid":"b2f984ed-720c-46a0-b7b8-8e15b8ce908f","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"2b102024-9eff-47ee-babb-b20d9ce13421","text":"WebAddress","type":"leaf"}],"text":"E classifiers"}],"data-nsd-label-uuid":"b9f79148-2b95-431b-8be6-48e29b28a051","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EPackage.gif","id":"884a5cd7-04e8-4e39-ad51-02fa5fa613cc","text":"party","type":"leaf"},{"children":[{"data-nsd-label-uuid":"26f98cc8-9c42-4d33-b233-7c4a4b45471d","icon":"far fa-question-circle","id":"3b135a98-e3d4-4be3-9a50-70d39ffe62be","text":"(blank)","type":"leaf"}],"text":"Decorator"},{"children":[{"a_attr":{"onclick":"window.location='references/eClassifiers/ContactMethod/inheritance.html';"},"children":[{"children":[{"a_attr":{"onclick":"window.location='references/eClassifiers/ContactMethod/inheritance.html#uuid-57f517c4-bffe-4a5c-a067-464251fe6598';"},"data-nsd-label-uuid":"57f517c4-bffe-4a5c-a067-464251fe6598","id":"7006924b-6e99-478f-9e9e-9e93c9c9d706","text":"Subtypes","type":"leaf"}],"text":"Sections"}],"data-nsd-label-uuid":"0610a92c-8dd6-4d34-94e0-da84a0187fb7","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EGenericSuperType.gif","id":"e8f597cc-3517-4e58-9b68-22838e81c4e1","text":"Inheritance","type":"leaf"},{"a_attr":{"onclick":"window.location='references/eClassifiers/ContactMethod/diagram.html';"},"data-nsd-label-uuid":"5c2dc0f0-7732-47aa-b62e-867024b2e66a","icon":"fas fa-project-diagram","id":"7aee7fcf-1be6-4212-94f1-bf055851ed92","text":"Diagram","type":"leaf"},{"children":[{"children":[{"a_attr":{"onclick":"window.location='references/eClassifiers/ContactMethod/default-graph.html';"},"children":[{"children":[{"data-nsd-label-uuid":"cc9cf733-51b0-4036-b92e-537ebc952a8a","icon":"far fa-question-circle","id":"752bcd68-27ab-42f5-98e2-f8921bec25fd","text":"(blank)","type":"leaf"}],"text":"Decorator"}],"data-nsd-label-uuid":"42f1547d-e5d8-472d-a8ef-6ce9de24c289","id":"a2d295e7-cd93-45fb-95a5-9ceaaeb40b33","text":"Default Graph","type":"leaf"},{"a_attr":{"onclick":"window.location='references/eClassifiers/ContactMethod/circular-layout-graph.html';"},"children":[{"children":[{"data-nsd-label-uuid":"1de491f2-f5d0-40ec-99fc-152a661a6f2b","icon":"far fa-question-circle","id":"a1fbf23c-0546-412b-892a-a61c5452248a","text":"(blank)","type":"leaf"}],"text":"Decorator"}],"data-nsd-label-uuid":"237cf081-bb74-4278-b50f-f8a4beb60bd1","id":"34490b73-f437-4955-9011-611f48744c1c","text":"Circular Graph","type":"leaf"},{"a_attr":{"onclick":"window.location='references/eClassifiers/ContactMethod/force-layout-graph.html';"},"children":[{"children":[{"data-nsd-label-uuid":"56d7bb76-00c8-4fa9-8b29-8d9bc8de66c2","icon":"far fa-question-circle","id":"7f9e5083-1bc5-4aa3-b8b1-4b02d371b7fa","text":"(blank)","type":"leaf"}],"text":"Decorator"}],"data-nsd-label-uuid":"81c3c878-6fbd-4c81-92c5-7ed8f1b26c36","id":"aac5c8b3-ee58-4900-a49e-bd9ca1fa22f9","text":"Force Graph","type":"leaf"}],"text":"Children"},{"children":[{"data-nsd-label-uuid":"c5c4e7db-bfab-45e2-a8af-d8fb7e8ac980","icon":"far fa-question-circle","id":"nsd_i","text":"(blank)","type":"leaf"}],"text":"Decorator"}],"data-nsd-label-uuid":"ffd78d89-57cb-4600-9de8-461fdacec6a1","icon":"https://img.icons8.com/external-dreamstale-lineal-dreamstale/16/external-diagram-seo-media-dreamstale-lineal-dreamstale.png","id":"e9122e55-5cbe-4065-9021-09a0fc037b54","text":"Graphs","type":"leaf"}],"text":"Navigation"},{"children":[{"data-nsd-label-uuid":"9274a544-f316-44f4-8973-3c13c7e0eac0","icon":"far fa-question-circle","id":"de172605-331e-4d82-8eab-8d4a535c1519","text":"(blank)","type":"leaf"}],"text":"Decorator"},{"children":[{"a_attr":{"onclick":"window.location='references/eClassifiers/EMail/attributes.html';"},"data-nsd-label-uuid":"ec82caa3-dac4-414f-84cb-0bc804cd5da7","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EAttribute.gif","id":"40276c38-0ba6-46b9-b09d-d7fc76d3545a","text":"Attributes","type":"leaf"},{"a_attr":{"onclick":"window.location='references/eClassifiers/EMail/inheritance.html';"},"children":[{"children":[{"a_attr":{"onclick":"window.location='references/eClassifiers/EMail/inheritance.html#uuid-58bab1b1-7af7-4cbb-a51d-e429eb6107d6';"},"data-nsd-label-uuid":"58bab1b1-7af7-4cbb-a51d-e429eb6107d6","id":"eeb36b03-9f47-4cd4-8e5f-5dedb975f119","text":"Supertypes","type":"leaf"}],"text":"Sections"}],"data-nsd-label-uuid":"f0e0a34d-815d-430b-91f1-998a06db7d0d","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EGenericSuperType.gif","id":"fefedf04-9b7f-48c9-981e-b7ab7796c923","text":"Inheritance","type":"leaf"},{"a_attr":{"onclick":"window.location='references/eClassifiers/EMail/diagram.html';"},"data-nsd-label-uuid":"7caa210a-9dab-4df8-9deb-0cada57ac63f","icon":"fas fa-project-diagram","id":"5d167326-92e0-4a58-80ab-56b885276f99","text":"Diagram","type":"leaf"},{"children":[{"children":[{"a_attr":{"onclick":"window.location='references/eClassifiers/EMail/default-graph.html';"},"children":[{"children":[{"data-nsd-label-uuid":"7c16c78c-a17b-460b-9716-93a6a1359708","icon":"far fa-question-circle","id":"8db9ee7f-8d89-4e85-a092-8751d696a712","text":"(blank)","type":"leaf"}],"text":"Decorator"}],"data-nsd-label-uuid":"15938144-bbeb-4e15-ae9c-9ba3a22d01bc","id":"c8fd9295-15b5-4f78-ac2c-11c0b5ec99fc","text":"Default Graph","type":"leaf"},{"a_attr":{"onclick":"window.location='references/eClassifiers/EMail/circular-layout-graph.html';"},"children":[{"children":[{"data-nsd-label-uuid":"226973ac-19d8-4b92-b8a3-700217c01cc0","icon":"far fa-question-circle","id":"615ffcda-0a64-46ad-a6b2-5b0c9966deff","text":"(blank)","type":"leaf"}],"text":"Decorator"}],"data-nsd-label-uuid":"cd471846-1433-4d0f-bc1f-dcf9d021378d","id":"b43cf09e-7969-425f-b2b0-23f51d7fddf9","text":"Circular Graph","type":"leaf"},{"a_attr":{"onclick":"window.location='references/eClassifiers/EMail/force-layout-graph.html';"},"children":[{"children":[{"data-nsd-label-uuid":"34be1088-8731-4ab3-aa7b-9bb545b2a40d","icon":"far fa-question-circle","id":"78297412-752d-4be4-8aaa-bb2cf238c3b5","text":"(blank)","type":"leaf"}],"text":"Decorator"}],"data-nsd-label-uuid":"6903039e-9283-4de3-8508-6db34c2af0dd","id":"e7fcf927-1622-4262-b941-fa9c2692151d","text":"Force Graph","type":"leaf"}],"text":"Children"},{"children":[{"data-nsd-label-uuid":"66a3343c-326c-457b-95d0-30267f6a5f4f","icon":"far fa-question-circle","id":"nsd_y","text":"(blank)","type":"leaf"}],"text":"Decorator"}],"data-nsd-label-uuid":"950146a6-a083-4dea-a01b-263c1dd8572c","icon":"https://img.icons8.com/external-dreamstale-lineal-dreamstale/16/external-diagram-seo-media-dreamstale-lineal-dreamstale.png","id":"85700076-c405-4c1c-8d64-54d77fe00ec5","text":"Graphs","type":"leaf"},{"a_attr":{"onclick":"window.location='references/eClassifiers/EMail/load-specification.html';"},"data-nsd-label-uuid":"044f6583-0b01-4592-a08f-94a35f5931b2","id":"f9e24cba-8974-49b2-89fc-7fc469eecc9a","text":"Load specification","type":"leaf"}],"text":"Navigation"},{"children":[{"data-nsd-label-uuid":"017d73b4-0062-4a8c-b40d-ba3b4ad51174","icon":"far fa-question-circle","id":"56e22d99-65a3-4be6-b391-22397fed75e1","text":"(blank)","type":"leaf"}],"text":"Decorator"},{"children":[{"data-nsd-label-uuid":"9e67d87a-f028-40a4-8f8e-7552c2974ac4","icon":"far fa-question-circle","id":"6ca3cff9-68ef-4861-8aea-6328017078d4","text":"(blank)","type":"leaf"}],"text":"Decorator"},{"children":[{"a_attr":{"onclick":"window.location='references/eClassifiers/Organization/inheritance.html';"},"children":[{"children":[{"a_attr":{"onclick":"window.location='references/eClassifiers/Organization/inheritance.html#uuid-073b0172-7623-4a83-93c6-2a5de0c6667f';"},"data-nsd-label-uuid":"073b0172-7623-4a83-93c6-2a5de0c6667f","id":"d83ce313-ae27-46f1-a566-d35c6b226139","text":"Supertypes","type":"leaf"}],"text":"Sections"}],"data-nsd-label-uuid":"5d6d8b98-feb1-4e6a-a73d-4f5bf5e66c72","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EGenericSuperType.gif","id":"9919ac64-2d4a-409a-9550-db2de8640b6e","text":"Inheritance","type":"leaf"},{"a_attr":{"onclick":"window.location='references/eClassifiers/Organization/references.html';"},"data-nsd-label-uuid":"9b39ae9f-e818-431b-ae7b-2995cec6a08c","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EReference.gif","id":"7125c7de-0cd3-43e3-a4c2-35c54a8f52b7","text":"References","type":"leaf"},{"a_attr":{"onclick":"window.location='references/eClassifiers/Organization/diagram.html';"},"data-nsd-label-uuid":"483fc192-a160-4b5f-a9a6-d29b714e2de9","icon":"fas fa-project-diagram","id":"62221c60-f1c2-4023-b735-adf6763a73bd","text":"Diagram","type":"leaf"},{"children":[{"children":[{"a_attr":{"onclick":"window.location='references/eClassifiers/Organization/default-graph.html';"},"children":[{"children":[{"data-nsd-label-uuid":"288fed00-ead9-4541-a11b-bc9add20df23","icon":"far fa-question-circle","id":"86670e7b-5932-4392-8ce5-d109bdbcad9c","text":"(blank)","type":"leaf"}],"text":"Decorator"}],"data-nsd-label-uuid":"87439069-ed08-42fb-a84b-673d62544f88","id":"8b61bb16-b93e-47e2-842f-0b94acf59e57","text":"Default Graph","type":"leaf"},{"a_attr":{"onclick":"window.location='references/eClassifiers/Organization/circular-layout-graph.html';"},"children":[{"children":[{"data-nsd-label-uuid":"85290cc3-f13c-4bb8-9573-c77c93784ff7","icon":"far fa-question-circle","id":"62138024-0c1a-49f9-b330-87d325011c66","text":"(blank)","type":"leaf"}],"text":"Decorator"}],"data-nsd-label-uuid":"d13bca93-49c2-4581-867f-568441f07700","id":"1d9cd63a-e320-4096-9e74-766577c1d6aa","text":"Circular Graph","type":"leaf"},{"a_attr":{"onclick":"window.location='references/eClassifiers/Organization/force-layout-graph.html';"},"children":[{"children":[{"data-nsd-label-uuid":"2805f7cd-f5b3-4b81-b911-baa3296026b5","icon":"far fa-question-circle","id":"fd081982-f155-44df-9814-1f3169c5c43d","text":"(blank)","type":"leaf"}],"text":"Decorator"}],"data-nsd-label-uuid":"3ec4c9c1-dac6-48b8-b411-9a2a6a8df7bc","id":"5dab888b-be4d-46fc-a7b4-8d72be8019a2","text":"Force Graph","type":"leaf"}],"text":"Children"},{"children":[{"data-nsd-label-uuid":"1457596f-f605-4dad-970f-1eb918dc5979","icon":"far fa-question-circle","id":"nsd_1f","text":"(blank)","type":"leaf"}],"text":"Decorator"}],"data-nsd-label-uuid":"4736b830-9b8f-45be-ae18-56ba1b7d9417","icon":"https://img.icons8.com/external-dreamstale-lineal-dreamstale/16/external-diagram-seo-media-dreamstale-lineal-dreamstale.png","id":"40dd632f-5361-4ef0-bf51-7a2b73cd8cb4","text":"Graphs","type":"leaf"},{"a_attr":{"onclick":"window.location='references/eClassifiers/Organization/load-specification.html';"},"data-nsd-label-uuid":"39f0228c-aaf4-4047-bfd6-fca2c5d9d4cf","id":"7d571f4b-8334-42fd-8c80-1618a6b5b80c","text":"Load specification","type":"leaf"}],"text":"Navigation"},{"children":[{"data-nsd-label-uuid":"c0df3635-9583-45ce-be6c-893f101ba50b","icon":"far fa-question-circle","id":"54d1e77f-850a-4733-b0c3-2477753e016e","text":"(blank)","type":"leaf"}],"text":"Decorator"},{"children":[{"data-nsd-label-uuid":"650d11de-ad0a-4926-b9af-32282c20e675","icon":"far fa-question-circle","id":"75754e44-9074-4d33-903a-bba86f85a347","text":"(blank)","type":"leaf"}],"text":"Decorator"},{"children":[{"a_attr":{"onclick":"window.location='references/eClassifiers/Party/references.html';"},"data-nsd-label-uuid":"41cf479e-43f7-4d3e-ac05-569b28fcb5b6","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EReference.gif","id":"3243b533-4491-4146-98c2-6543d6503688","text":"References","type":"leaf"},{"a_attr":{"onclick":"window.location='references/eClassifiers/Party/inheritance.html';"},"children":[{"children":[{"a_attr":{"onclick":"window.location='references/eClassifiers/Party/inheritance.html#uuid-b954d7fa-b174-416c-9e31-07160a81a5f3';"},"data-nsd-label-uuid":"b954d7fa-b174-416c-9e31-07160a81a5f3","id":"822a658d-0ab2-4b6d-9c58-555db2d07168","text":"Subtypes","type":"leaf"}],"text":"Sections"}],"data-nsd-label-uuid":"b20f4e79-8d63-4f0e-b53c-209037700712","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EGenericSuperType.gif","id":"de23a32e-564d-4914-a03f-38af5a2a5c62","text":"Inheritance","type":"leaf"},{"a_attr":{"onclick":"window.location='references/eClassifiers/Party/diagram.html';"},"data-nsd-label-uuid":"d73c6663-f8aa-4b04-aa07-960992d538a0","icon":"fas fa-project-diagram","id":"8d907f22-05ad-4655-afaa-1b3a6b009bde","text":"Diagram","type":"leaf"},{"children":[{"children":[{"a_attr":{"onclick":"window.location='references/eClassifiers/Party/default-graph.html';"},"children":[{"children":[{"data-nsd-label-uuid":"3008a038-57bd-4938-afe4-ad0cf347baf9","icon":"far fa-question-circle","id":"f9be250e-1d1f-482d-8f22-580d0c545466","text":"(blank)","type":"leaf"}],"text":"Decorator"}],"data-nsd-label-uuid":"fa8e6c77-3a2c-442c-8bda-eb3c16f499c2","id":"6aa3e4bc-2aae-4cb5-8043-96853ff235dc","text":"Default Graph","type":"leaf"},{"a_attr":{"onclick":"window.location='references/eClassifiers/Party/circular-layout-graph.html';"},"children":[{"children":[{"data-nsd-label-uuid":"817bdf86-5863-4451-b904-353f76110af8","icon":"far fa-question-circle","id":"f265cd24-e47a-4392-9743-7f860a60dbc6","text":"(blank)","type":"leaf"}],"text":"Decorator"}],"data-nsd-label-uuid":"8aa40c3d-ca34-4327-87f7-a012fcfb4c58","id":"01cfe9ed-dc9a-4884-9db8-e4bde20aa82c","text":"Circular Graph","type":"leaf"},{"a_attr":{"onclick":"window.location='references/eClassifiers/Party/force-layout-graph.html';"},"children":[{"children":[{"data-nsd-label-uuid":"aee53348-65da-44d4-b5ba-3d3b96e86095","icon":"far fa-question-circle","id":"7c2480ae-b89b-4c71-9a10-c531c3dbd7af","text":"(blank)","type":"leaf"}],"text":"Decorator"}],"data-nsd-label-uuid":"4bec59aa-2eb6-4e35-9098-7441bb9d9e06","id":"3a68193e-306d-4293-af34-00b05c045277","text":"Force Graph","type":"leaf"}],"text":"Children"},{"children":[{"data-nsd-label-uuid":"7675638a-410d-4fde-b0be-c96fcac2b892","icon":"far fa-question-circle","id":"nsd_1w","text":"(blank)","type":"leaf"}],"text":"Decorator"}],"data-nsd-label-uuid":"5ea63767-c821-40fc-81f4-33340d556d6b","icon":"https://img.icons8.com/external-dreamstale-lineal-dreamstale/16/external-diagram-seo-media-dreamstale-lineal-dreamstale.png","id":"dc0ba9ce-0d37-44e5-a943-3f81933d4e1d","text":"Graphs","type":"leaf"}],"text":"Navigation"},{"children":[{"data-nsd-label-uuid":"bed63a7d-905a-4883-881b-12d8094ae942","icon":"far fa-question-circle","id":"33cceb58-d64c-4dba-a030-7c0269c6e55b","text":"(blank)","type":"leaf"}],"text":"Decorator"},{"children":[{"data-nsd-label-uuid":"3f953a07-268f-48c4-9816-acf15da85bbc","icon":"far fa-question-circle","id":"e83cb06a-a800-4558-9f8f-0428c3a643f2","text":"(blank)","type":"leaf"}],"text":"Decorator"},{"children":[{"a_attr":{"onclick":"window.location='references/eClassifiers/Person/inheritance.html';"},"children":[{"children":[{"a_attr":{"onclick":"window.location='references/eClassifiers/Person/inheritance.html#uuid-98ea3eb3-9c25-49f6-b014-bd0bde133815';"},"data-nsd-label-uuid":"98ea3eb3-9c25-49f6-b014-bd0bde133815","id":"567f2278-907d-4c3f-b8d1-2d9b00bbb58e","text":"Supertypes","type":"leaf"}],"text":"Sections"}],"data-nsd-label-uuid":"97a7b2fd-9e36-47eb-8124-af9f84f3f9fe","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EGenericSuperType.gif","id":"914c20e3-d6a3-4981-89d6-44e7f8694dbc","text":"Inheritance","type":"leaf"},{"a_attr":{"onclick":"window.location='references/eClassifiers/Person/references.html';"},"data-nsd-label-uuid":"28415cbd-c528-4086-b81c-89499ce33eae","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EReference.gif","id":"1c876de5-b0b3-49f4-8660-9a088fb17f6d","text":"References","type":"leaf"},{"a_attr":{"onclick":"window.location='references/eClassifiers/Person/diagram.html';"},"data-nsd-label-uuid":"85366cde-d07b-4d58-94f5-8f19188dedbd","icon":"fas fa-project-diagram","id":"e2303720-1713-459c-9dd4-e7f2739c47bc","text":"Diagram","type":"leaf"},{"children":[{"children":[{"a_attr":{"onclick":"window.location='references/eClassifiers/Person/default-graph.html';"},"children":[{"children":[{"data-nsd-label-uuid":"dd317284-6772-4ec9-a012-153e700a3864","icon":"far fa-question-circle","id":"fd1b6b36-b1e5-4e75-94de-90431c5840c9","text":"(blank)","type":"leaf"}],"text":"Decorator"}],"data-nsd-label-uuid":"fb440a5f-d146-4ff3-8c0c-889e1c658f1a","id":"a2d19cc9-bb41-4407-a6ab-e212e314b862","text":"Default Graph","type":"leaf"},{"a_attr":{"onclick":"window.location='references/eClassifiers/Person/circular-layout-graph.html';"},"children":[{"children":[{"data-nsd-label-uuid":"60a49072-a21f-4158-b419-50a0e5294fa1","icon":"far fa-question-circle","id":"a124c9b1-f148-45c5-9361-21893d1b0f41","text":"(blank)","type":"leaf"}],"text":"Decorator"}],"data-nsd-label-uuid":"29fdcb5a-887d-461c-87ce-1017397dc7d9","id":"3c12dced-a347-48a3-bd25-241e6184d44e","text":"Circular Graph","type":"leaf"},{"a_attr":{"onclick":"window.location='references/eClassifiers/Person/force-layout-graph.html';"},"children":[{"children":[{"data-nsd-label-uuid":"58b2e8d3-4d10-4a48-a00f-066e845735bd","icon":"far fa-question-circle","id":"d79494c9-eaf3-4902-9cfd-3fa674063944","text":"(blank)","type":"leaf"}],"text":"Decorator"}],"data-nsd-label-uuid":"35aeaf00-c270-453f-b1c9-6e4d9eec60c5","id":"86d8d625-86b9-4114-8167-9689a3ef710a","text":"Force Graph","type":"leaf"}],"text":"Children"},{"children":[{"data-nsd-label-uuid":"94da1c85-07a1-44c8-9e46-acd081281eeb","icon":"far fa-question-circle","id":"nsd_2a","text":"(blank)","type":"leaf"}],"text":"Decorator"}],"data-nsd-label-uuid":"360e5050-514a-40a3-af66-d1d0c2942fd2","icon":"https://img.icons8.com/external-dreamstale-lineal-dreamstale/16/external-diagram-seo-media-dreamstale-lineal-dreamstale.png","id":"b237e918-539b-429e-b689-e99fd25b89f7","text":"Graphs","type":"leaf"},{"a_attr":{"onclick":"window.location='references/eClassifiers/Person/load-specification.html';"},"data-nsd-label-uuid":"83b0096d-cb3d-4878-8e2c-1e724c30d6f2","id":"261e14ca-fa0d-4e0e-a5d2-aa04dfa60931","text":"Load specification","type":"leaf"}],"text":"Navigation"},{"children":[{"data-nsd-label-uuid":"6732fc6d-1836-469a-a815-ee6a3d532c20","icon":"far fa-question-circle","id":"42ae854c-d39f-407d-9807-ef70922bf503","text":"(blank)","type":"leaf"}],"text":"Decorator"},{"children":[{"a_attr":{"onclick":"window.location='references/eClassifiers/Phone/attributes.html';"},"data-nsd-label-uuid":"aae5adb8-a970-40a7-95f0-6d0686bedbde","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EAttribute.gif","id":"5605aff9-e1bc-493a-8a62-d109333c3a8e","text":"Attributes","type":"leaf"},{"a_attr":{"onclick":"window.location='references/eClassifiers/Phone/inheritance.html';"},"children":[{"children":[{"a_attr":{"onclick":"window.location='references/eClassifiers/Phone/inheritance.html#uuid-532b12f7-2a03-4542-b7bf-fbd38ab3e45a';"},"data-nsd-label-uuid":"532b12f7-2a03-4542-b7bf-fbd38ab3e45a","id":"7671d59c-91f6-43d5-92f3-d812bf3b1b52","text":"Supertypes","type":"leaf"}],"text":"Sections"}],"data-nsd-label-uuid":"37777617-afeb-4155-9411-359da0f91c79","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EGenericSuperType.gif","id":"ba484f21-2c07-457f-af4e-c0532687c7a1","text":"Inheritance","type":"leaf"},{"a_attr":{"onclick":"window.location='references/eClassifiers/Phone/diagram.html';"},"data-nsd-label-uuid":"bbd48002-cc28-4f3e-b0d4-58bf52334c6e","icon":"fas fa-project-diagram","id":"102439db-be84-4c81-b14d-c1d7b5e04e53","text":"Diagram","type":"leaf"},{"children":[{"children":[{"a_attr":{"onclick":"window.location='references/eClassifiers/Phone/default-graph.html';"},"children":[{"children":[{"data-nsd-label-uuid":"823fb376-956c-4f9a-ba4b-8f29f04fe6af","icon":"far fa-question-circle","id":"f3ddadf4-86b0-4c92-877e-bc2f1e196aaf","text":"(blank)","type":"leaf"}],"text":"Decorator"}],"data-nsd-label-uuid":"c82ce928-79ce-4ada-b2e8-c5bdeae23735","id":"e1978faa-9e03-4921-8b65-98bdb3fc186c","text":"Default Graph","type":"leaf"},{"a_attr":{"onclick":"window.location='references/eClassifiers/Phone/circular-layout-graph.html';"},"children":[{"children":[{"data-nsd-label-uuid":"229a6d97-64f8-43ff-9a88-118fb146232c","icon":"far fa-question-circle","id":"9f4a1b9a-bf3d-480b-81c8-0962c689015c","text":"(blank)","type":"leaf"}],"text":"Decorator"}],"data-nsd-label-uuid":"5fdbbbf5-119e-43b3-bf04-6a755011b185","id":"01b46e19-87f1-4609-8a9d-5c89bb3c8da6","text":"Circular Graph","type":"leaf"},{"a_attr":{"onclick":"window.location='references/eClassifiers/Phone/force-layout-graph.html';"},"children":[{"children":[{"data-nsd-label-uuid":"b3737ca2-39cb-45b0-8faa-472ab9c211d0","icon":"far fa-question-circle","id":"a8e9d384-0c68-40bc-a5bb-77dba3bc4e6e","text":"(blank)","type":"leaf"}],"text":"Decorator"}],"data-nsd-label-uuid":"fdc49e43-5332-4ac6-8117-7915c1893007","id":"e8a423c7-11eb-46c2-ac5b-afaa51079376","text":"Force Graph","type":"leaf"}],"text":"Children"},{"children":[{"data-nsd-label-uuid":"9bdb35cd-3c1d-46e3-abf7-cb7313c6386c","icon":"far fa-question-circle","id":"nsd_2x","text":"(blank)","type":"leaf"}],"text":"Decorator"}],"data-nsd-label-uuid":"34e901f6-2c71-493f-b7d4-b598b7448a46","icon":"https://img.icons8.com/external-dreamstale-lineal-dreamstale/16/external-diagram-seo-media-dreamstale-lineal-dreamstale.png","id":"5ad1b6c0-d737-45b4-877a-05dbbc7a3220","text":"Graphs","type":"leaf"},{"a_attr":{"onclick":"window.location='references/eClassifiers/Phone/load-specification.html';"},"data-nsd-label-uuid":"a83b2f6d-3808-4515-b382-7c5f2f6b4d79","id":"91c70b91-793b-4510-9a66-671a01ff8c21","text":"Load specification","type":"leaf"}],"text":"Navigation"},{"children":[{"data-nsd-label-uuid":"83e13e62-e600-4478-a55e-3902bb42a598","icon":"far fa-question-circle","id":"18b57764-db39-4b84-a1b8-0d6a2abb7ec8","text":"(blank)","type":"leaf"}],"text":"Decorator"},{"children":[{"data-nsd-label-uuid":"bbb1dbd2-0ee7-4193-9f54-2f6fef63759c","icon":"far fa-question-circle","id":"822d257b-aa50-44d1-a522-2d273ecdb99a","text":"(blank)","type":"leaf"}],"text":"Decorator"},{"children":[{"data-nsd-label-uuid":"b717057c-410f-48cb-9308-73f18d2b0f8c","icon":"far fa-question-circle","id":"b6b70ae0-37fd-461c-9d40-c98d43c388d1","text":"(blank)","type":"leaf"}],"text":"Decorator"},{"children":[{"data-nsd-label-uuid":"0f98decc-b0ad-44e5-a9bb-8974a5267c83","icon":"far fa-question-circle","id":"f5d9ba3b-a9f6-47cb-89f3-e6ba1012013b","text":"(blank)","type":"leaf"}],"text":"Decorator"},{"children":[{"data-nsd-label-uuid":"2f1285b0-936e-4683-88e7-e744e0058e7b","icon":"far fa-question-circle","id":"e4caa954-e32d-48cd-b219-7b532b292291","text":"(blank)","type":"leaf"}],"text":"Decorator"},{"children":[{"a_attr":{"onclick":"window.location='references/eClassifiers/PostalAddress/attributes.html';"},"data-nsd-label-uuid":"18d043a8-3255-44ac-8289-ce535291501d","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EAttribute.gif","id":"550c0ed6-fbb7-4949-b3ca-822ea4107f2e","text":"Attributes","type":"leaf"},{"a_attr":{"onclick":"window.location='references/eClassifiers/PostalAddress/inheritance.html';"},"children":[{"children":[{"a_attr":{"onclick":"window.location='references/eClassifiers/PostalAddress/inheritance.html#uuid-0d967d18-2c59-415e-8636-5a71c5c21fe2';"},"data-nsd-label-uuid":"0d967d18-2c59-415e-8636-5a71c5c21fe2","id":"8b26d0cf-f2ce-4e6e-85a5-f7e58a5613ed","text":"Supertypes","type":"leaf"}],"text":"Sections"}],"data-nsd-label-uuid":"6dd79a69-32c5-4cf0-aa2f-d98f49c776a5","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EGenericSuperType.gif","id":"8f121f04-939b-4fc8-974a-170f82695896","text":"Inheritance","type":"leaf"},{"a_attr":{"onclick":"window.location='references/eClassifiers/PostalAddress/diagram.html';"},"data-nsd-label-uuid":"8372e7ae-a76d-41aa-99ca-fb0a165892b2","icon":"fas fa-project-diagram","id":"b6d881b8-7de7-4687-ab16-882bd2eefb81","text":"Diagram","type":"leaf"},{"children":[{"children":[{"a_attr":{"onclick":"window.location='references/eClassifiers/PostalAddress/default-graph.html';"},"children":[{"children":[{"data-nsd-label-uuid":"70b23cb7-2d09-41a7-af21-ab6395f06534","icon":"far fa-question-circle","id":"dd97dc8e-a099-410e-b8c5-eb13fc031303","text":"(blank)","type":"leaf"}],"text":"Decorator"}],"data-nsd-label-uuid":"0c151b9d-9309-448a-8636-da62f62015d9","id":"6455385e-0c62-4218-86d2-0f86c6ce9c27","text":"Default Graph","type":"leaf"},{"a_attr":{"onclick":"window.location='references/eClassifiers/PostalAddress/circular-layout-graph.html';"},"children":[{"children":[{"data-nsd-label-uuid":"8ea46dda-34ee-4f9e-9649-7ad48705ed86","icon":"far fa-question-circle","id":"0b6f8299-c227-494b-8bc2-8876766a3a88","text":"(blank)","type":"leaf"}],"text":"Decorator"}],"data-nsd-label-uuid":"57c5faea-ce61-4cd0-b5d6-05dd6cde86ac","id":"6844a252-8908-4c4d-a612-ac402be537ae","text":"Circular Graph","type":"leaf"},{"a_attr":{"onclick":"window.location='references/eClassifiers/PostalAddress/force-layout-graph.html';"},"children":[{"children":[{"data-nsd-label-uuid":"a7a21f9e-c71d-4ad0-92c5-32a5dde80f75","icon":"far fa-question-circle","id":"cd4e9989-2878-457a-9618-732343ca988c","text":"(blank)","type":"leaf"}],"text":"Decorator"}],"data-nsd-label-uuid":"628bf263-22ad-4092-b69a-8de6228b4b6d","id":"5947bead-83b7-4acc-8abf-4e42df226a35","text":"Force Graph","type":"leaf"}],"text":"Children"},{"children":[{"data-nsd-label-uuid":"4624941a-dbf7-42d3-96c2-1a700e193dec","icon":"far fa-question-circle","id":"nsd_3o","text":"(blank)","type":"leaf"}],"text":"Decorator"}],"data-nsd-label-uuid":"c1652700-287f-47ff-87da-f5c34866fb10","icon":"https://img.icons8.com/external-dreamstale-lineal-dreamstale/16/external-diagram-seo-media-dreamstale-lineal-dreamstale.png","id":"d051ecf4-c15d-4deb-8c46-07c242686f21","text":"Graphs","type":"leaf"},{"a_attr":{"onclick":"window.location='references/eClassifiers/PostalAddress/load-specification.html';"},"data-nsd-label-uuid":"1d8f9566-685a-491a-b71f-95e4c1022c91","id":"64b06ed8-135b-4d0c-8001-eabc9799a352","text":"Load specification","type":"leaf"}],"text":"Navigation"},{"children":[{"data-nsd-label-uuid":"5aaf650e-f85e-42b4-b43d-e5d4ac165be4","icon":"far fa-question-circle","id":"353527a1-49a9-4f51-a31a-73a3c37da2b1","text":"(blank)","type":"leaf"}],"text":"Decorator"},{"children":[{"data-nsd-label-uuid":"b0dc6bef-b322-4f74-8183-a26700b4eb83","icon":"far fa-question-circle","id":"eb5ee1bf-0c40-4f6b-8083-f8b0887d396b","text":"(blank)","type":"leaf"}],"text":"Decorator"},{"children":[{"data-nsd-label-uuid":"84f34686-d28c-4209-b00e-b6b339febd69","icon":"far fa-question-circle","id":"1f40236b-594f-4de5-8057-20e37c23d3fd","text":"(blank)","type":"leaf"}],"text":"Decorator"},{"children":[{"data-nsd-label-uuid":"c1245ca8-3023-4a6f-8020-a2b5f0f40483","icon":"far fa-question-circle","id":"a6c7490d-987d-4bd5-ac1e-c0b7ddcb30bc","text":"(blank)","type":"leaf"}],"text":"Decorator"},{"children":[{"data-nsd-label-uuid":"2d3f2929-706c-4024-9c0f-f626807702fe","icon":"far fa-question-circle","id":"0464bb9c-d2b2-4dba-a843-74723681206e","text":"(blank)","type":"leaf"}],"text":"Decorator"},{"children":[{"data-nsd-label-uuid":"8d527183-af63-40e8-9cda-250b7093ae0f","icon":"far fa-question-circle","id":"16a3a4b9-ee0b-4092-8079-fd3020f1fa54","text":"(blank)","type":"leaf"}],"text":"Decorator"},{"children":[{"data-nsd-label-uuid":"b4fa3363-f80c-4b63-9382-db824f3d16c3","icon":"far fa-question-circle","id":"f698628f-b0d0-44db-88ca-02824c438426","text":"(blank)","type":"leaf"}],"text":"Decorator"},{"children":[{"a_attr":{"onclick":"window.location='references/eClassifiers/Role/references.html';"},"data-nsd-label-uuid":"85050039-2399-4df9-83f7-f9eab5d17c90","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EReference.gif","id":"799e123b-c0d5-4931-a6b0-142d0d5aceca","text":"References","type":"leaf"},{"a_attr":{"onclick":"window.location='references/eClassifiers/Role/diagram.html';"},"data-nsd-label-uuid":"60684d70-dc45-4092-aff5-1ce7413f9136","icon":"fas fa-project-diagram","id":"17d28c95-d183-497e-a254-620bf5cafc94","text":"Diagram","type":"leaf"},{"children":[{"children":[{"a_attr":{"onclick":"window.location='references/eClassifiers/Role/default-graph.html';"},"children":[{"children":[{"data-nsd-label-uuid":"e211da14-d78f-401e-8a9f-8a98a7d0f215","icon":"far fa-question-circle","id":"dce7dbd8-d128-40e4-9f24-d669d7a1e62c","text":"(blank)","type":"leaf"}],"text":"Decorator"}],"data-nsd-label-uuid":"ffc2a542-c7b7-43c9-9ee2-b14365700fc4","id":"3b808882-b94f-49c9-a9c2-c151a53da827","text":"Default Graph","type":"leaf"},{"a_attr":{"onclick":"window.location='references/eClassifiers/Role/circular-layout-graph.html';"},"children":[{"children":[{"data-nsd-label-uuid":"a8a8d1fc-0f2e-4a3f-a0ea-ff8047444d62","icon":"far fa-question-circle","id":"4f9fcc29-9d0f-4e78-8931-11dc457683db","text":"(blank)","type":"leaf"}],"text":"Decorator"}],"data-nsd-label-uuid":"9d7f328a-d6ab-4eda-a1b8-e3ccaef09b01","id":"6d1e5861-404d-4880-a771-121afad15b59","text":"Circular Graph","type":"leaf"},{"a_attr":{"onclick":"window.location='references/eClassifiers/Role/force-layout-graph.html';"},"children":[{"children":[{"data-nsd-label-uuid":"49e1144b-edb2-400d-be1a-48fd372e4cce","icon":"far fa-question-circle","id":"e810a7d9-bf04-4d6e-aaf5-087ca5e7b198","text":"(blank)","type":"leaf"}],"text":"Decorator"}],"data-nsd-label-uuid":"53247149-ab6e-49ad-ad6d-4a5b3ca7aad3","id":"1b57f2bc-7252-4162-bda1-050f65541f63","text":"Force Graph","type":"leaf"}],"text":"Children"},{"children":[{"data-nsd-label-uuid":"dd49cf36-4e76-4a59-b7fc-a26318646117","icon":"far fa-question-circle","id":"nsd_43","text":"(blank)","type":"leaf"}],"text":"Decorator"}],"data-nsd-label-uuid":"a69efa37-a7a9-405b-913e-a2f1a9a331a8","icon":"https://img.icons8.com/external-dreamstale-lineal-dreamstale/16/external-diagram-seo-media-dreamstale-lineal-dreamstale.png","id":"6c587632-0d57-40b1-a94d-9cf13b357545","text":"Graphs","type":"leaf"},{"a_attr":{"onclick":"window.location='references/eClassifiers/Role/load-specification.html';"},"data-nsd-label-uuid":"1d93836e-49e4-429b-a783-b6431c812072","id":"bcc6760c-eb0f-4058-b6e5-24a3b30673ad","text":"Load specification","type":"leaf"}],"text":"Navigation"},{"children":[{"data-nsd-label-uuid":"1bba098c-2ce2-4941-b352-7b403671e23c","icon":"far fa-question-circle","id":"4408ab2a-b37c-4409-8ea4-63c022114d34","text":"(blank)","type":"leaf"}],"text":"Decorator"},{"children":[{"data-nsd-label-uuid":"72a8e131-8117-4dcb-abcd-e45c01f56c33","icon":"far fa-question-circle","id":"a540481c-615c-4a32-b099-544219a57245","text":"(blank)","type":"leaf"}],"text":"Decorator"},{"children":[{"a_attr":{"onclick":"window.location='references/eClassifiers/WebAddress/attributes.html';"},"data-nsd-label-uuid":"a1f84dde-21b4-47c9-949a-880f9739a88c","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EAttribute.gif","id":"ff8c0308-5b81-49b7-8a72-8eb717bd3994","text":"Attributes","type":"leaf"},{"a_attr":{"onclick":"window.location='references/eClassifiers/WebAddress/inheritance.html';"},"children":[{"children":[{"a_attr":{"onclick":"window.location='references/eClassifiers/WebAddress/inheritance.html#uuid-dc9869a6-ba68-4ce4-892f-714497b54daa';"},"data-nsd-label-uuid":"dc9869a6-ba68-4ce4-892f-714497b54daa","id":"67591a67-8b23-4b5d-bdde-2da418adf985","text":"Supertypes","type":"leaf"}],"text":"Sections"}],"data-nsd-label-uuid":"3e2f9f84-0ea6-45c3-b3c2-1876cd7f5fcd","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EGenericSuperType.gif","id":"78ce7c5b-e7eb-4e67-8beb-cc1a79640119","text":"Inheritance","type":"leaf"},{"a_attr":{"onclick":"window.location='references/eClassifiers/WebAddress/diagram.html';"},"data-nsd-label-uuid":"16ff3c45-64d8-4288-9c85-2c1a840f26a6","icon":"fas fa-project-diagram","id":"6728e08e-5fc9-4185-b7d0-8537892baa97","text":"Diagram","type":"leaf"},{"children":[{"children":[{"a_attr":{"onclick":"window.location='references/eClassifiers/WebAddress/default-graph.html';"},"children":[{"children":[{"data-nsd-label-uuid":"8f9d640e-75a0-477b-a785-f9ec23f51596","icon":"far fa-question-circle","id":"7f01851e-e6fe-469d-aa5c-5d58a6a802d2","text":"(blank)","type":"leaf"}],"text":"Decorator"}],"data-nsd-label-uuid":"0abd1e66-e4fb-40ee-bde6-94f8bfb93015","id":"98b67266-c03f-44de-9ef0-b79dad2a6367","text":"Default Graph","type":"leaf"},{"a_attr":{"onclick":"window.location='references/eClassifiers/WebAddress/circular-layout-graph.html';"},"children":[{"children":[{"data-nsd-label-uuid":"6ee1efa4-2d2f-46ad-8fbc-5cd4d6bfc1e0","icon":"far fa-question-circle","id":"08f0a790-dc4a-4200-9979-0455194ca158","text":"(blank)","type":"leaf"}],"text":"Decorator"}],"data-nsd-label-uuid":"583643f3-bd57-4328-85ce-c2bc750af9c4","id":"59d25890-ddec-49eb-a232-a850c92bc984","text":"Circular Graph","type":"leaf"},{"a_attr":{"onclick":"window.location='references/eClassifiers/WebAddress/force-layout-graph.html';"},"children":[{"children":[{"data-nsd-label-uuid":"6a0f4afa-4d1b-4371-a708-5912e574f757","icon":"far fa-question-circle","id":"da16e348-654c-4d5b-9c48-957d6f760874","text":"(blank)","type":"leaf"}],"text":"Decorator"}],"data-nsd-label-uuid":"38f9de08-5232-4bb8-9945-670947158907","id":"81db8b50-20e6-45fc-8025-fa46c6e7cd0b","text":"Force Graph","type":"leaf"}],"text":"Children"},{"children":[{"data-nsd-label-uuid":"cf9bf1b4-d165-4317-bee0-52b4a6d296d9","icon":"far fa-question-circle","id":"nsd_4k","text":"(blank)","type":"leaf"}],"text":"Decorator"}],"data-nsd-label-uuid":"b35eaad8-a8ce-47b3-89be-466e1a27cce9","icon":"https://img.icons8.com/external-dreamstale-lineal-dreamstale/16/external-diagram-seo-media-dreamstale-lineal-dreamstale.png","id":"745f76cd-5192-4e10-af44-782809513da4","text":"Graphs","type":"leaf"},{"a_attr":{"onclick":"window.location='references/eClassifiers/WebAddress/load-specification.html';"},"data-nsd-label-uuid":"5aa64535-f362-4ba6-88c3-de9124e8d818","id":"aeb2ae02-6938-45dc-9563-6e7b5e66bfa2","text":"Load specification","type":"leaf"}],"text":"Navigation"},{"children":[{"data-nsd-label-uuid":"48ad10eb-b82a-49e1-a7dd-bd02dad8c387","icon":"far fa-question-circle","id":"e663f336-6b8c-4cec-8c1c-eebbd0b61dc6","text":"(blank)","type":"leaf"}],"text":"Decorator"},{"children":[{"data-nsd-label-uuid":"4367d729-f7e1-4775-954b-2a68782b52f3","icon":"far fa-question-circle","id":"28507039-264e-4c1e-b59b-8e1cd4c1875f","text":"(blank)","type":"leaf"}],"text":"Decorator"},{"children":[{"a_attr":{"onclick":"window.location='classifiers.html';"},"data-nsd-label-uuid":"f9617485-184e-4e98-8ce0-e2471e11790d","id":"b384a4b7-8064-4246-b029-db4141476aa5","text":"Classifiers","type":"leaf"},{"a_attr":{"onclick":"window.location='diagram.html';"},"children":[{"children":[{"data-nsd-label-uuid":"2203f62f-1cbd-449a-ba53-26285956285c","icon":"far fa-question-circle","id":"67140497-cecf-41e7-810a-1a152e867678","text":"(blank)","type":"leaf"}],"text":"Decorator"}],"data-nsd-label-uuid":"b6367d87-e2fd-4655-a5f9-9786c3688401","icon":"fas fa-project-diagram","id":"59127be3-e99e-4186-ba0f-9a62aa87375e","text":"Diagram","type":"leaf"},{"children":[{"children":[{"a_attr":{"onclick":"window.location='default-graph.html';"},"children":[{"children":[{"data-nsd-label-uuid":"14e6ee8d-f632-4415-ad6a-b08952c9e9f6","icon":"far fa-question-circle","id":"422d8565-e229-4085-a051-1c78dd036f2d","text":"(blank)","type":"leaf"}],"text":"Decorator"}],"data-nsd-label-uuid":"62bbc31e-03fc-4cac-a5b1-e1684559918f","id":"295fecc6-24f2-493f-9c83-5ccb497df36d","text":"Default Graph","type":"leaf"},{"a_attr":{"onclick":"window.location='circular-layout-graph.html';"},"children":[{"children":[{"data-nsd-label-uuid":"7046ed43-66ad-4f9e-ada6-18b90eacb75e","icon":"far fa-question-circle","id":"b7a17a9d-ff47-4370-86b4-322f1880cba7","text":"(blank)","type":"leaf"}],"text":"Decorator"}],"data-nsd-label-uuid":"12646a2c-8980-4862-8d37-a3825784829a","id":"9ea89198-f851-4c47-a2f8-27ff70402118","text":"Circular Graph","type":"leaf"},{"a_attr":{"onclick":"window.location='force-layout-graph.html';"},"children":[{"children":[{"data-nsd-label-uuid":"f43ed0fd-8404-47ab-88bd-323b321fc7d0","icon":"far fa-question-circle","id":"b83d4c08-e7d7-492d-b6e6-a5c79f43e901","text":"(blank)","type":"leaf"}],"text":"Decorator"}],"data-nsd-label-uuid":"06ebe68b-c5de-449e-8aca-3c2fc85b6974","id":"e53659a5-1a76-47c5-92b4-4a7d723d2eeb","text":"Force Graph","type":"leaf"},{"data-nsd-label-uuid":"c985cc32-13b7-47b3-b084-f9fcd2825194","id":"nsd_4x","text":"(blank)","type":"leaf"},{"a_attr":{"onclick":"window.location='default-graph-with-dependencies-and-subpackages.html';"},"children":[{"children":[{"data-nsd-label-uuid":"500dc2d1-9679-4bf9-a12d-ec8a06a94743","icon":"far fa-question-circle","id":"7e1ce45f-80ff-4b28-a812-d49fd5ca926c","text":"(blank)","type":"leaf"}],"text":"Decorator"}],"data-nsd-label-uuid":"a34dad85-5d54-4d59-ae1e-a7d700b4ced7","id":"bae53fd2-2d29-4d61-aa06-bbe0c83f73a2","text":"Default Graph","type":"leaf"},{"a_attr":{"onclick":"window.location='circular-layout-graph-with-dependencies-and-subpackages.html';"},"children":[{"children":[{"data-nsd-label-uuid":"6a41a5ba-60a4-4acc-a2b3-860d4f7d2e7c","icon":"far fa-question-circle","id":"42163829-962e-4ba3-9c6e-3e007b24c2a8","text":"(blank)","type":"leaf"}],"text":"Decorator"}],"data-nsd-label-uuid":"8c65c5e4-5f73-49f6-a0db-7732ee508560","id":"4d9c3e98-e601-492f-9297-956b53f8226c","text":"Circular Graph","type":"leaf"},{"a_attr":{"onclick":"window.location='force-layout-graph-with-dependencies-and-subpackages.html';"},"children":[{"children":[{"data-nsd-label-uuid":"98702ff2-0670-41c3-add4-76c4c3e9b7a3","icon":"far fa-question-circle","id":"633a9d27-4f10-46b1-a58f-0e3ab407103f","text":"(blank)","type":"leaf"}],"text":"Decorator"}],"data-nsd-label-uuid":"11ca1906-7b24-4459-9a1c-99211fdab0d3","id":"34706cfc-a507-4586-b503-b6f25fe194c3","text":"Force Graph","type":"leaf"}],"text":"Children"},{"children":[{"data-nsd-label-uuid":"8bbd6678-a89b-4ede-b3ce-e6b8ba8d6110","icon":"far fa-question-circle","id":"nsd_54","text":"(blank)","type":"leaf"}],"text":"Decorator"}],"data-nsd-label-uuid":"a9cf09e9-dc52-4325-a27c-2b07af86183c","icon":"https://img.icons8.com/external-dreamstale-lineal-dreamstale/16/external-diagram-seo-media-dreamstale-lineal-dreamstale.png","id":"06307974-8895-4e64-96c8-541f2d11b9e0","text":"Graphs","type":"leaf"}],"text":"Navigation"}]},"search":{"show_only_matches":true},"plugins":["state","search"],"state":{"key":"nsd-site-map-tree"}}));
+});</script>
+				
+		</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col nsd-app-footer">
+          <ul class="nav nsd-app-footer-navs">
+            <li class="nav-item">
+              <a href="https://github.com/Nasdanika-Models/party" data-nsd-label-uuid="f17fe4ca-1271-4ec1-954c-129c00c8a002" class="nav-link"><span class="fab fa-github nsd-app-label-icon"></span>Sources</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
