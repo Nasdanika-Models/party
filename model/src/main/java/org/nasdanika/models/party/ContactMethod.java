@@ -2,7 +2,7 @@
  */
 package org.nasdanika.models.party;
 
-import org.eclipse.emf.ecore.EObject;
+import org.nasdanika.ncore.DocumentedNamedStringIdentity;
 
 /**
  * <!-- begin-user-doc -->
@@ -18,5 +18,5 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface ContactMethod extends EObject {
+public interface ContactMethod extends DocumentedNamedStringIdentity {
 } // ContactMethod

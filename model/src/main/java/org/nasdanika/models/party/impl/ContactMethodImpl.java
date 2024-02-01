@@ -3,10 +3,9 @@
 package org.nasdanika.models.party.impl;
 
 import org.eclipse.emf.ecore.EClass;
-
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 import org.nasdanika.models.party.ContactMethod;
 import org.nasdanika.models.party.PartyPackage;
+import org.nasdanika.ncore.impl.DocumentedNamedStringIdentityImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -15,7 +14,7 @@ import org.nasdanika.models.party.PartyPackage;
  *
  * @generated
  */
-public class ContactMethodImpl extends MinimalEObjectImpl.Container implements ContactMethod {
+public class ContactMethodImpl extends DocumentedNamedStringIdentityImpl implements ContactMethod {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -33,16 +32,6 @@ public class ContactMethodImpl extends MinimalEObjectImpl.Container implements C
 	@Override
 	protected EClass eStaticClass() {
 		return PartyPackage.Literals.CONTACT_METHOD;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	protected int eStaticFeatureCount() {
-		return 0;
 	}
 
 } //ContactMethodImpl

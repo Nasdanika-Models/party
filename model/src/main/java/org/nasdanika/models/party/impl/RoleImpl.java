@@ -7,12 +7,10 @@ import java.util.Collection;
 import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
-
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
-
 import org.nasdanika.models.party.Party;
 import org.nasdanika.models.party.PartyPackage;
 import org.nasdanika.models.party.Role;
+import org.nasdanika.ncore.impl.DocumentedNamedStringIdentityImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -27,7 +25,7 @@ import org.nasdanika.models.party.Role;
  *
  * @generated
  */
-public class RoleImpl extends MinimalEObjectImpl.Container implements Role {
+public class RoleImpl extends DocumentedNamedStringIdentityImpl implements Role {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -45,16 +43,6 @@ public class RoleImpl extends MinimalEObjectImpl.Container implements Role {
 	@Override
 	protected EClass eStaticClass() {
 		return PartyPackage.Literals.ROLE;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	protected int eStaticFeatureCount() {
-		return 0;
 	}
 
 	/**

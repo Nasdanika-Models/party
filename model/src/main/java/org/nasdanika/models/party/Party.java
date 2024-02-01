@@ -3,8 +3,7 @@
 package org.nasdanika.models.party;
 
 import org.eclipse.emf.common.util.EList;
-
-import org.eclipse.emf.ecore.EObject;
+import org.nasdanika.ncore.DocumentedNamedStringIdentity;
 
 /**
  * <!-- begin-user-doc -->
@@ -26,7 +25,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model abstract="true"
  * @generated
  */
-public interface Party extends EObject {
+public interface Party extends DocumentedNamedStringIdentity {
 	/**
 	 * Returns the value of the '<em><b>Contact Methods</b></em>' containment reference list.
 	 * The list contents are of type {@link org.nasdanika.models.party.ContactMethod}.

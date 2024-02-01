@@ -4,7 +4,8 @@
     editorDirectory="" modelPluginID="org.nasdanika.models.party" modelName="Party"
     rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" importerID="org.eclipse.emf.importer.ecore"
     featureDelegation="Dynamic" complianceLevel="17.0" suppressGenModelAnnotations="false"
-    copyrightFields="false" operationReflection="true" importOrganizing="true">
+    copyrightFields="false" usedGenPackages="../../org.nasdanika.ncore/model/ncore.genmodel#//ncore"
+    operationReflection="true" importOrganizing="true">
   <foreignModel>party.ecore</foreignModel>
   <genPackages prefix="Party" basePackage="org.nasdanika.models" disposableProviderFactory="true"
       ecorePackage="party.ecore#/">

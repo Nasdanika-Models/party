@@ -10,14 +10,12 @@ import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
-
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
-
 import org.eclipse.emf.ecore.util.InternalEList;
 
 import org.nasdanika.models.party.ContactMethod;
 import org.nasdanika.models.party.Party;
 import org.nasdanika.models.party.PartyPackage;
+import org.nasdanika.ncore.impl.DocumentedNamedStringIdentityImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -32,7 +30,7 @@ import org.nasdanika.models.party.PartyPackage;
  *
  * @generated
  */
-public abstract class PartyImpl extends MinimalEObjectImpl.Container implements Party {
+public abstract class PartyImpl extends DocumentedNamedStringIdentityImpl implements Party {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -50,16 +48,6 @@ public abstract class PartyImpl extends MinimalEObjectImpl.Container implements 
 	@Override
 	protected EClass eStaticClass() {
 		return PartyPackage.Literals.PARTY;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	protected int eStaticFeatureCount() {
-		return 0;
 	}
 
 	/**

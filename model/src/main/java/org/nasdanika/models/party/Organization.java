@@ -35,7 +35,7 @@ public interface Organization extends Party {
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Roles</em>' containment reference list.
 	 * @see org.nasdanika.models.party.PartyPackage#getOrganization_Roles()
-	 * @model containment="true"
+	 * @model containment="true" keys="id"
 	 * @generated
 	 */
 	EList<Role> getRoles();

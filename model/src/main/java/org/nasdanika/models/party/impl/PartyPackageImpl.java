@@ -20,6 +20,7 @@ import org.nasdanika.models.party.Phone;
 import org.nasdanika.models.party.PostalAddress;
 import org.nasdanika.models.party.Role;
 import org.nasdanika.models.party.WebAddress;
+import org.nasdanika.ncore.NcorePackage;
 
 /**
  * <!-- begin-user-doc -->
@@ -136,6 +137,9 @@ public class PartyPackageImpl extends EPackageImpl implements PartyPackage {
 		PartyPackageImpl thePartyPackage = registeredPartyPackage instanceof PartyPackageImpl ? (PartyPackageImpl)registeredPartyPackage : new PartyPackageImpl();
 
 		isInited = true;
+
+		// Initialize simple dependencies
+		NcorePackage.eINSTANCE.eClass();
 
 		// Create package meta-data objects
 		thePartyPackage.createPackageContents();
@@ -477,13 +481,19 @@ public class PartyPackageImpl extends EPackageImpl implements PartyPackage {
 		setNsPrefix(eNS_PREFIX);
 		setNsURI(eNS_URI);
 
+		// Obtain other dependent packages
+		NcorePackage theNcorePackage = (NcorePackage)EPackage.Registry.INSTANCE.getEPackage(NcorePackage.eNS_URI);
+
 		// Create type parameters
 
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
+		partyEClass.getESuperTypes().add(theNcorePackage.getDocumentedNamedStringIdentity());
+		roleEClass.getESuperTypes().add(theNcorePackage.getDocumentedNamedStringIdentity());
 		organizationEClass.getESuperTypes().add(this.getParty());
 		personEClass.getESuperTypes().add(this.getParty());
+		contactMethodEClass.getESuperTypes().add(theNcorePackage.getDocumentedNamedStringIdentity());
 		eMailEClass.getESuperTypes().add(this.getContactMethod());
 		phoneEClass.getESuperTypes().add(this.getContactMethod());
 		postalAddressEClass.getESuperTypes().add(this.getContactMethod());
@@ -498,6 +508,7 @@ public class PartyPackageImpl extends EPackageImpl implements PartyPackage {
 
 		initEClass(organizationEClass, Organization.class, "Organization", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getOrganization_Roles(), this.getRole(), null, "roles", null, 0, -1, Organization.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrganization_Roles().getEKeys().add(theNcorePackage.getStringIdentity_Id());
 
 		initEClass(personEClass, Person.class, "Person", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
