@@ -1,21 +1,21 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="EN">
   <head>
     <title>Attributes</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cerulean/bootstrap.min.css" id="nsd-bootstrap-theme-stylesheet">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cerulean/bootstrap.min.css" id="nsd-bootstrap-theme-stylesheet"/>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Nasdanika-Models/html-app@master/gen/web-resources/css/app.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jstree@3.3.16/dist/themes/default/style.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@5.5.0/github-markdown.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/styles/default.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-vue@2.23.0/dist/bootstrap-vue.css">
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Nasdanika-Models/html-app@master/gen/web-resources/css/app.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jstree@3.3.16/dist/themes/default/style.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@5.5.0/github-markdown.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/styles/default.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-vue@2.23.0/dist/bootstrap-vue.css"/>
     <script src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/html-app@master/gen/web-resources/js/common.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/html-app@master/gen/web-resources/js/dark-head.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jstree@3.3.16/dist/jstree.min.js"></script>
@@ -34,55 +34,19 @@
 
   gtag('config', 'G-9BRJVLK8CC');
 </script>    
-
-<script src="../../../search-documents.js"></script>
-
-<script src="https://cdn.jsdelivr.net/gh/olivernn/lunr.js@v2.3.9/lunr.js"></script>
-
-<script>
-// Script for full-text search of JsTree
-
-window.nsdJsTreeSearchCallback = function(str, node) { 
-    var sf = new $.vakata.search(str, true, { caseSensitive : false, fuzzy : false }); 
-    if (sf.search(node.text).isMatch) {
-		return true;
-	} 
-    let searchResult = this.search(str); 
-    for (const sr in searchResult) {
-        if (searchResult[sr].ref === node.original['data-nsd-label-uuid']) {
-            return true;
-        } 
-    } 
-    return false; 
-}.bind(lunr(function () {
-			  this.ref('id');
-			  this.field('title');
-			  this.field('content');
-
-			  for (const key in searchDocuments) {
-				  let doc = searchDocuments[key];
-				this.add({
-					id: doc['link-uuid'],
-					title: doc.title,
-					path: doc.path,
-					content: doc.content
-				});  
-			  }
-			}));
-</script>
 </head>
   <body>
     <div class="container-fluid nsd-app-container">
       <div class="row">
         <div class="col nsd-app-header">
-          <a href="https://github.com/Nasdanika-Models" data-nsd-label-uuid="1db763f3-dc1d-4468-bdd1-8103d81752ff" class="nsd-app-header-title">
-            <img src="https://docs.nasdanika.org/images/nasdanika-logo.png" class="nsd-app-label-icon">Nasdanika Models</a>
+          <a href="https://github.com/Nasdanika-Models" data-nsd-label-uuid="0416b9cb-bc3d-4277-8908-e3c7b526d894" class="nsd-app-header-title">
+            <img src="https://docs.nasdanika.org/images/nasdanika-logo.png" class="nsd-app-label-icon"/>Nasdanika Models</a>
           <ul class="nav nsd-app-header-navs">
             <li class="nav-item">
-              <a href="../../../search.html" data-nsd-label-uuid="f4d031ee-ce63-4d2c-8570-2b02024e1558" class="nav-link"><span class="fas fa-search nsd-app-label-icon"></span>Search</a>
+              <a href="../../../search.html" data-nsd-label-uuid="12aadd06-7556-4a78-9a6a-a8ed8d9f06f2" class="nav-link"><span class="fas fa-search nsd-app-label-icon"></span>Search</a>
             </li>
             <li class="nav-item">
-              <a href="../../../glossary.html" data-nsd-label-uuid="3ff52ebe-31df-4946-9106-322b330e64b3" class="nav-link"><span class="fas fa-book nsd-app-label-icon"></span>Glossary</a>
+              <a href="../../../glossary.html" data-nsd-label-uuid="7fa5b4b4-1e94-4585-bd0c-c56601090cd5" class="nav-link"><span class="fas fa-book nsd-app-label-icon"></span>Glossary</a>
             </li>
           </ul>
         </div>
@@ -90,33 +54,33 @@ window.nsdJsTreeSearchCallback = function(str, node) {
       <div class="row">
         <div class="col nsd-app-navbar">
           <ul class="navbar navbar-light navbar-expand-lg">
-            <a href="../../../index.html" data-nsd-label-uuid="63dc3be0-a676-496c-b128-9a0261dea00e" class="navbar-brand">
-              <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EPackage.gif" class="nsd-app-label-icon">party</a>
-            <button type="button" data-toggle="collapse" data-target="#nsd_z2" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span>
+            <a href="../../../index.html" data-nsd-label-uuid="eeba0f34-9f1f-4769-9689-6f209283fa2c" class="navbar-brand">
+              <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EPackage.gif" class="nsd-app-label-icon"/>party</a>
+            <button type="button" data-toggle="collapse" data-target="#nsd_ug" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span>
             </button>
-            <div id="nsd_z2" class="collapse navbar-collapse">
+            <div id="nsd_ug" class="collapse navbar-collapse">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                  <a href="../../../classifiers.html" data-nsd-label-uuid="19f7b39f-0920-4376-a014-7c511f5b6abc" class="nav-link">Classifiers</a>
+                  <a href="../../../classifiers.html" data-nsd-label-uuid="f3bff356-4733-43f2-a948-050af8f205c9" class="nav-link">Classifiers</a>
                 </li>
                 <li class="nav-item">
-                  <a href="../../../diagram.html" data-nsd-label-uuid="abe9ffb0-6950-47d4-bbc3-00edade9ecd9" class="nav-link"><span class="fas fa-project-diagram nsd-app-label-icon"></span>Diagram</a>
+                  <a href="../../../diagram.html" data-nsd-label-uuid="8360194a-e4a0-4928-b4e7-2287e1c54b46" class="nav-link"><span class="fas fa-project-diagram nsd-app-label-icon"></span>Diagram</a>
                 </li>
                 <li class="nav-item">
-                  </li><li data-nsd-label-uuid="66734655-71cb-463d-86c8-b89fc5f308b0" class="dropdown">
+                  <li data-nsd-label-uuid="126f9991-63ce-4ed5-87eb-a985dbf65831" class="dropdown">
                     <a role="button" data-toggle="dropdown" class="nav-link dropdown-toggle">
-                      <img src="https://img.icons8.com/external-dreamstale-lineal-dreamstale/16/external-diagram-seo-media-dreamstale-lineal-dreamstale.png" class="nsd-app-label-icon">Graphs</a>
+                      <img src="https://img.icons8.com/external-dreamstale-lineal-dreamstale/16/external-diagram-seo-media-dreamstale-lineal-dreamstale.png" class="nsd-app-label-icon"/>Graphs</a>
                     <div class="dropdown-menu">
-                      <a href="../../../default-graph.html" data-nsd-label-uuid="9a99c7ae-c71e-4cb6-af8c-c43e215efd7c" class="dropdown-item">Default Graph</a>
-                      <a href="../../../circular-layout-graph.html" data-nsd-label-uuid="1f203afd-e790-4139-95d5-3349de2021b6" class="dropdown-item">Circular Graph</a>
-                      <a href="../../../force-layout-graph.html" data-nsd-label-uuid="555ad030-6bc8-4ce2-ab8c-aabda14d716c" class="dropdown-item">Force Graph</a>
+                      <a href="../../../default-graph.html" data-nsd-label-uuid="08d2e891-f692-4a7b-b80d-cda04318ee59" class="dropdown-item">Default Graph</a>
+                      <a href="../../../circular-layout-graph.html" data-nsd-label-uuid="010db88d-4838-498e-b686-a050c37855d1" class="dropdown-item">Circular Graph</a>
+                      <a href="../../../force-layout-graph.html" data-nsd-label-uuid="71e2c8ab-f420-453f-9050-29c8d204b71b" class="dropdown-item">Force Graph</a>
                       <div title="With dependencies and sub-packages" class="dropdown-divider"></div>
-                      <a href="../../../default-graph-with-dependencies-and-subpackages.html" data-nsd-label-uuid="912e943b-4ae7-484d-a6c3-1ff28741fa1d" class="dropdown-item">Default Graph</a>
-                      <a href="../../../circular-layout-graph-with-dependencies-and-subpackages.html" data-nsd-label-uuid="449163d3-229f-4fb5-a286-8f7386cec281" class="dropdown-item">Circular Graph</a>
-                      <a href="../../../force-layout-graph-with-dependencies-and-subpackages.html" data-nsd-label-uuid="44b5fcca-710e-4e27-a9d1-eb333c375d16" class="dropdown-item">Force Graph</a>
+                      <a href="../../../default-graph-with-dependencies-and-subpackages.html" data-nsd-label-uuid="d92d224c-a50b-4878-875c-bb9d535ae1f1" class="dropdown-item">Default Graph</a>
+                      <a href="../../../circular-layout-graph-with-dependencies-and-subpackages.html" data-nsd-label-uuid="9a05cdc5-5893-4503-86e5-df202bf617d8" class="dropdown-item">Circular Graph</a>
+                      <a href="../../../force-layout-graph-with-dependencies-and-subpackages.html" data-nsd-label-uuid="a8d90da5-e9a9-43ae-b694-abfed49acf9c" class="dropdown-item">Force Graph</a>
                     </div>
                   </li>
-                
+                </li>
               </ul>
             </div>
           </ul>
@@ -125,37 +89,37 @@ window.nsdJsTreeSearchCallback = function(str, node) {
       <div class="row nsd-app-content-row">
         <div class="col nsd-app-navigation-panel">
           <div class="list-group list-group-flush">
-            <a href="../ContactMethod/index.html" title="Generic contact method." data-nsd-label-uuid="ba0c7a8c-5bf1-4660-9bea-a3018a6bf316" class="list-group-item list-group-action">
-              <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon">ContactMethod</a>
-            <a href="../EMail/index.html" title="E-mail address." data-nsd-label-uuid="141905d3-c72a-4cda-8785-dfa89db08a98" class="list-group-item list-group-action">
-              <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon">EMail</a>
-            <a href="../Organization/index.html" title="A grop of parties in roles collaborating to achieve some goal or perform some function " data-nsd-label-uuid="9e3ec10e-35ac-49c4-bf18-40a5a83898ee" class="list-group-item list-group-action">
-              <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon">Organization</a>
-            <a href="../Party/index.html" title="Something that can particpate/play role in something - a person, organization, system" data-nsd-label-uuid="8065b567-ade4-415a-99d1-832015ec0593" class="list-group-item list-group-action">
-              <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon"><i>Party</i></a>
-            <a href="../Person/index.html" title="A human party." data-nsd-label-uuid="2c78c7e1-5af6-4437-9703-f16582f0c348" class="list-group-item list-group-action">
-              <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon">Person</a>
-            <a href="../Phone/index.html" title="Phone." data-nsd-label-uuid="b594a292-46b4-471b-b77b-10767531815b" class="list-group-item list-group-action">
-              <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon">Phone</a>
-            <a href="../PostalAddress/index.html" title="Postal Address." data-nsd-label-uuid="1fff8ad0-ad26-412a-920e-c9bfea206e31" class="list-group-item list-group-action">
-              <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon">PostalAddress</a>
-            <a href="index.html" title="A role played by a party in an organization. Subclasses may reference a shared role definition" data-nsd-label-uuid="1a1490f4-be0a-47ff-9e8a-d8d96db36f3d" class="list-group-item list-group-action active">
-              <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon">Role</a>
-            <a href="../WebAddress/index.html" title="URL." data-nsd-label-uuid="f099ca3c-83ce-41de-8b38-789c19ac0803" class="list-group-item list-group-action">
-              <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon">WebAddress</a>
+            <a href="../ContactMethod/index.html" title="Generic contact method." data-nsd-label-uuid="484a3f45-51b8-4cb7-8fb1-bc82d96e917f" class="list-group-item list-group-action">
+              <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon"/>ContactMethod</a>
+            <a href="../EMail/index.html" title="E-mail address." data-nsd-label-uuid="cdcb6c86-546e-4494-8552-acde1499945f" class="list-group-item list-group-action">
+              <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon"/>EMail</a>
+            <a href="../Organization/index.html" title="A grop of parties in roles collaborating to achieve some goal or perform some function " data-nsd-label-uuid="2411f1a2-c493-4186-9bfd-8bddb8487b8e" class="list-group-item list-group-action">
+              <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon"/>Organization</a>
+            <a href="../Party/index.html" title="Something that can particpate/play role in something - a person, organization, system" data-nsd-label-uuid="e6dcdebc-b79e-4781-aee0-eedb623e2772" class="list-group-item list-group-action">
+              <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon"/><i>Party</i></a>
+            <a href="../Person/index.html" title="A human party." data-nsd-label-uuid="2a3217fb-3206-472a-b26c-195c8636a625" class="list-group-item list-group-action">
+              <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon"/>Person</a>
+            <a href="../Phone/index.html" title="Phone." data-nsd-label-uuid="c63d166e-bd17-4ed1-89c4-9230dbfd6c42" class="list-group-item list-group-action">
+              <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon"/>Phone</a>
+            <a href="../PostalAddress/index.html" title="Postal Address." data-nsd-label-uuid="f3d9d962-1e4a-4d35-973e-97cc665ef6b1" class="list-group-item list-group-action">
+              <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon"/>PostalAddress</a>
+            <a href="index.html" title="A role played by a party in an organization. Subclasses may reference a shared role definition" data-nsd-label-uuid="246c9ba0-b3e1-4cc3-a81b-974278e7ff0f" class="list-group-item list-group-action active">
+              <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon"/>Role</a>
+            <a href="../WebAddress/index.html" title="URL." data-nsd-label-uuid="e072dab0-d788-4c10-bf99-cf66182c2330" class="list-group-item list-group-action">
+              <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon"/>WebAddress</a>
           </div>
         </div>
-        <div data-nsd-label-uuid="98cd162b-6b1e-4b6e-87e2-c0ad258e667c" data-nsd-action-uris="uuid:98cd162b-6b1e-4b6e-87e2-c0ad258e667c" class="col nsd-app-content-panel">
+        <div data-nsd-label-uuid="a01b5b49-0a34-49bd-bd7c-3a2220a9998c" data-nsd-action-uris="uuid:a01b5b49-0a34-49bd-bd7c-3a2220a9998c" class="col nsd-app-content-panel">
           <div class="container-fluid">
             <div class="row nsd-app-content-panel-breadcrumb-row">
               <div class="col">
                 <nav aria-label="breadcrumb" class="nsd-app-content-panel-breadcrumb">
                   <ol class="breadcrumb">
                     <li class="breadcrumb-item">
-                      <a href="index.html" title="A role played by a party in an organization. Subclasses may reference a shared role definition" data-nsd-label-uuid="1a1490f4-be0a-47ff-9e8a-d8d96db36f3d">
-                        <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon">Role</a>
+                      <a href="index.html" title="A role played by a party in an organization. Subclasses may reference a shared role definition" data-nsd-label-uuid="246c9ba0-b3e1-4cc3-a81b-974278e7ff0f">
+                        <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon"/>Role</a>
                     </li>
-                    <li class="breadcrumb-item active"><span data-nsd-label-uuid="98cd162b-6b1e-4b6e-87e2-c0ad258e667c"><img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EAttribute.gif" class="nsd-app-label-icon">Attributes</span>
+                    <li class="breadcrumb-item active"><span data-nsd-label-uuid="a01b5b49-0a34-49bd-bd7c-3a2220a9998c"><img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EAttribute.gif" class="nsd-app-label-icon"/>Attributes</span>
                     </li>
                   </ol>
                 </nav>
@@ -163,8 +127,8 @@ window.nsdJsTreeSearchCallback = function(str, node) {
             </div>
             <div class="row nsd-app-content-panel-title-and-items-row">
               <div class="col-auto">
-                <h1><span data-nsd-label-uuid="98cd162b-6b1e-4b6e-87e2-c0ad258e667c" class="nsd-app-content-panel-title"><img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EAttribute.gif" class="nsd-app-label-icon">Attributes</span>
-                </h1>
+                <H1><span data-nsd-label-uuid="a01b5b49-0a34-49bd-bd7c-3a2220a9998c" class="nsd-app-content-panel-title"><img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EAttribute.gif" class="nsd-app-label-icon"/>Attributes</span>
+                </H1>
               </div>
             </div>
             <div class="row nsd-app-content-panel-content-row">
@@ -174,7 +138,7 @@ window.nsdJsTreeSearchCallback = function(str, node) {
                     <div class="col">
 <div>
   <div id="attributes-table">
-    <nsd-ecore-doc-table :columns="[{&quot;key&quot;:&quot;name&quot;,&quot;visible&quot;:true,&quot;label&quot;:&quot;Name&quot;},{&quot;key&quot;:&quot;description&quot;,&quot;visible&quot;:true,&quot;label&quot;:&quot;Description&quot;},{&quot;visible&quot;:true,&quot;sortable&quot;:true,&quot;label&quot;:&quot;Type&quot;,&quot;key&quot;:&quot;type&quot;},{&quot;visible&quot;:true,&quot;sortable&quot;:true,&quot;label&quot;:&quot;Multiplicity&quot;,&quot;key&quot;:&quot;multiplicity&quot;},{&quot;visible&quot;:true,&quot;sortable&quot;:true,&quot;label&quot;:&quot;Declaring Class&quot;,&quot;key&quot;:&quot;declaring-class&quot;},{&quot;key&quot;:&quot;changeable&quot;,&quot;visible&quot;:true,&quot;label&quot;:&quot;Changeable&quot;},{&quot;key&quot;:&quot;derived&quot;,&quot;visible&quot;:true,&quot;label&quot;:&quot;Derived&quot;}]" :items="[{&quot;name&quot;:&quot;\r\n<a href=\&quot;https://ncore.models.nasdanika.org/references/eClassifiers/ModelElement/references/eStructuralFeatures/description/index.html\&quot; title=\&quot;Description in HTML.\&quot;>\r\n  <img src=\&quot;https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EAttribute.gif\&quot; class=\&quot;nsd-app-label-icon\&quot;/>description<\/a>&quot;,&quot;description&quot;:&quot;Description in HTML.&quot;,&quot;multiplicity&quot;:&quot;0..1&quot;,&quot;declaring-class&quot;:&quot;<!-- ModelElement--> \r\n<a href=\&quot;https://ncore.models.nasdanika.org/references/eClassifiers/ModelElement/index.html\&quot; title=\&quot;Base class for many Nasdanika model classes.\&quot;>\r\n  <img src=\&quot;https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif\&quot; class=\&quot;nsd-app-label-icon\&quot;/><i>ModelElement<\/i><\/a>&quot;,&quot;changeable&quot;:&quot;<i class=\&quot;fas fa-check\&quot;><\/i>&quot;,&quot;type&quot;:&quot;<!-- EString--> \r\n<a href=\&quot;https://ecore.models.nasdanika.org/references/eClassifiers/EString/index.html\&quot;>\r\n  <img src=\&quot;https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EDataType.gif\&quot; class=\&quot;nsd-app-label-icon\&quot;/>EString<\/a>&quot;},{&quot;name&quot;:&quot;\r\n<a href=\&quot;https://ncore.models.nasdanika.org/references/eClassifiers/StringIdentity/references/eStructuralFeatures/id/index.html\&quot; title=\&quot;Element ID used as eKey in containment references\&quot;>\r\n  <img src=\&quot;https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EAttribute.gif\&quot; class=\&quot;nsd-app-label-icon\&quot;/>id<\/a>&quot;,&quot;description&quot;:&quot;Element ID used as eKey in containment references&quot;,&quot;multiplicity&quot;:&quot;1&quot;,&quot;declaring-class&quot;:&quot;<!-- StringIdentity--> \r\n<a href=\&quot;https://ncore.models.nasdanika.org/references/eClassifiers/StringIdentity/index.html\&quot; title=\&quot;Base for classes which are unquely identified by a string in their containment reference\&quot;>\r\n  <img src=\&quot;https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif\&quot; class=\&quot;nsd-app-label-icon\&quot;/><i>StringIdentity<\/i><\/a>&quot;,&quot;changeable&quot;:&quot;<i class=\&quot;fas fa-check\&quot;><\/i>&quot;,&quot;type&quot;:&quot;<!-- EString--> \r\n<a href=\&quot;https://ecore.models.nasdanika.org/references/eClassifiers/EString/index.html\&quot;>\r\n  <img src=\&quot;https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EDataType.gif\&quot; class=\&quot;nsd-app-label-icon\&quot;/>EString<\/a>&quot;},{&quot;name&quot;:&quot;\r\n<a href=\&quot;https://ncore.models.nasdanika.org/references/eClassifiers/NamedElement/references/eStructuralFeatures/name/index.html\&quot; title=\&quot;Element name.\&quot;>\r\n  <img src=\&quot;https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EAttribute.gif\&quot; class=\&quot;nsd-app-label-icon\&quot;/>name<\/a>&quot;,&quot;description&quot;:&quot;Element name.&quot;,&quot;multiplicity&quot;:&quot;0..1&quot;,&quot;declaring-class&quot;:&quot;<!-- NamedElement--> \r\n<a href=\&quot;https://ncore.models.nasdanika.org/references/eClassifiers/NamedElement/index.html\&quot; title=\&quot;A model element with name.\&quot;>\r\n  <img src=\&quot;https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif\&quot; class=\&quot;nsd-app-label-icon\&quot;/>NamedElement<\/a>&quot;,&quot;changeable&quot;:&quot;<i class=\&quot;fas fa-check\&quot;><\/i>&quot;,&quot;type&quot;:&quot;<!-- EString--> \r\n<a href=\&quot;https://ecore.models.nasdanika.org/references/eClassifiers/EString/index.html\&quot;>\r\n  <img src=\&quot;https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EDataType.gif\&quot; class=\&quot;nsd-app-label-icon\&quot;/>EString<\/a>&quot;},{&quot;name&quot;:&quot;\r\n<a href=\&quot;https://ncore.models.nasdanika.org/references/eClassifiers/ModelElement/references/eStructuralFeatures/uris/index.html\&quot; title=\&quot;Element URI's - there might be more than one. See ``NcoreUtil.getUris()`` for more details.\nURI's can be used for cross-referencing of elements in a resource-independent fashion.\n\&quot;>\r\n  <img src=\&quot;https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EAttribute.gif\&quot; class=\&quot;nsd-app-label-icon\&quot;/>uris<\/a>&quot;,&quot;description&quot;:&quot;Element URI's - there might be more than one. See ``NcoreUtil.getUris()`` for more details.\nURI's can be used for cross-referencing of elements in a resource-independent fashion.\n&quot;,&quot;multiplicity&quot;:&quot;0..*&quot;,&quot;declaring-class&quot;:&quot;<!-- ModelElement--> \r\n<a href=\&quot;https://ncore.models.nasdanika.org/references/eClassifiers/ModelElement/index.html\&quot; title=\&quot;Base class for many Nasdanika model classes.\&quot;>\r\n  <img src=\&quot;https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif\&quot; class=\&quot;nsd-app-label-icon\&quot;/><i>ModelElement<\/i><\/a>&quot;,&quot;changeable&quot;:&quot;<i class=\&quot;fas fa-check\&quot;><\/i>&quot;,&quot;type&quot;:&quot;<!-- EString--> \r\n<a href=\&quot;https://ecore.models.nasdanika.org/references/eClassifiers/EString/index.html\&quot;>\r\n  <img src=\&quot;https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EDataType.gif\&quot; class=\&quot;nsd-app-label-icon\&quot;/>EString<\/a>&quot;},{&quot;name&quot;:&quot;\r\n<a href=\&quot;https://ncore.models.nasdanika.org/references/eClassifiers/ModelElement/references/eStructuralFeatures/uuid/index.html\&quot; title=\&quot;Optional unique identifier for this model element. For root objects UUID is used to compute URI, if the URI is not set.\&quot;>\r\n  <img src=\&quot;https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EAttribute.gif\&quot; class=\&quot;nsd-app-label-icon\&quot;/>uuid<\/a>&quot;,&quot;description&quot;:&quot;Optional unique identifier for this model element. For root objects UUID is used to compute URI, if the URI is not set.&quot;,&quot;multiplicity&quot;:&quot;0..1&quot;,&quot;declaring-class&quot;:&quot;<!-- ModelElement--> \r\n<a href=\&quot;https://ncore.models.nasdanika.org/references/eClassifiers/ModelElement/index.html\&quot; title=\&quot;Base class for many Nasdanika model classes.\&quot;>\r\n  <img src=\&quot;https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif\&quot; class=\&quot;nsd-app-label-icon\&quot;/><i>ModelElement<\/i><\/a>&quot;,&quot;changeable&quot;:&quot;<i class=\&quot;fas fa-check\&quot;><\/i>&quot;,&quot;type&quot;:&quot;<!-- EString--> \r\n<a href=\&quot;https://ecore.models.nasdanika.org/references/eClassifiers/EString/index.html\&quot;>\r\n  <img src=\&quot;https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EDataType.gif\&quot; class=\&quot;nsd-app-label-icon\&quot;/>EString<\/a>&quot;}]" config-key="eclass-attributes" transitive-label="Inherited" />
+    <nsd-ecore-doc-table :columns="[{&quot;key&quot;:&quot;name&quot;,&quot;visible&quot;:true,&quot;label&quot;:&quot;Name&quot;},{&quot;key&quot;:&quot;description&quot;,&quot;visible&quot;:true,&quot;label&quot;:&quot;Description&quot;},{&quot;visible&quot;:true,&quot;sortable&quot;:true,&quot;label&quot;:&quot;Type&quot;,&quot;key&quot;:&quot;type&quot;},{&quot;visible&quot;:true,&quot;sortable&quot;:true,&quot;label&quot;:&quot;Multiplicity&quot;,&quot;key&quot;:&quot;multiplicity&quot;},{&quot;visible&quot;:true,&quot;sortable&quot;:true,&quot;label&quot;:&quot;Declaring Class&quot;,&quot;key&quot;:&quot;declaring-class&quot;},{&quot;key&quot;:&quot;changeable&quot;,&quot;visible&quot;:true,&quot;label&quot;:&quot;Changeable&quot;},{&quot;key&quot;:&quot;derived&quot;,&quot;visible&quot;:true,&quot;label&quot;:&quot;Derived&quot;}]" :items="[{&quot;name&quot;:&quot;\r\n&lt;a href=\&quot;https://ncore.models.nasdanika.org/references/eClassifiers/ModelElement/references/eStructuralFeatures/description/index.html\&quot; title=\&quot;Description in HTML.\&quot;&gt;\r\n  &lt;img src=\&quot;https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EAttribute.gif\&quot; class=\&quot;nsd-app-label-icon\&quot;/&gt;description&lt;\/a&gt;&quot;,&quot;description&quot;:&quot;Description in HTML.&quot;,&quot;multiplicity&quot;:&quot;0..1&quot;,&quot;declaring-class&quot;:&quot;&lt;!-- ModelElement--&gt; \r\n&lt;a href=\&quot;https://ncore.models.nasdanika.org/references/eClassifiers/ModelElement/index.html\&quot; title=\&quot;Base class for many Nasdanika model classes.\&quot;&gt;\r\n  &lt;img src=\&quot;https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif\&quot; class=\&quot;nsd-app-label-icon\&quot;/&gt;&lt;i&gt;ModelElement&lt;\/i&gt;&lt;\/a&gt;&quot;,&quot;changeable&quot;:&quot;&lt;i class=\&quot;fas fa-check\&quot;&gt;&lt;\/i&gt;&quot;,&quot;type&quot;:&quot;&lt;!-- EString--&gt; \r\n&lt;a href=\&quot;https://ecore.models.nasdanika.org/references/eClassifiers/EString/index.html\&quot;&gt;\r\n  &lt;img src=\&quot;https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EDataType.gif\&quot; class=\&quot;nsd-app-label-icon\&quot;/&gt;EString&lt;\/a&gt;&quot;},{&quot;name&quot;:&quot;\r\n&lt;a href=\&quot;https://ncore.models.nasdanika.org/references/eClassifiers/StringIdentity/references/eStructuralFeatures/id/index.html\&quot; title=\&quot;Element ID used as eKey in containment references\&quot;&gt;\r\n  &lt;img src=\&quot;https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EAttribute.gif\&quot; class=\&quot;nsd-app-label-icon\&quot;/&gt;id&lt;\/a&gt;&quot;,&quot;description&quot;:&quot;Element ID used as eKey in containment references&quot;,&quot;multiplicity&quot;:&quot;1&quot;,&quot;declaring-class&quot;:&quot;&lt;!-- StringIdentity--&gt; \r\n&lt;a href=\&quot;https://ncore.models.nasdanika.org/references/eClassifiers/StringIdentity/index.html\&quot; title=\&quot;Base for classes which are unquely identified by a string in their containment reference\&quot;&gt;\r\n  &lt;img src=\&quot;https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif\&quot; class=\&quot;nsd-app-label-icon\&quot;/&gt;&lt;i&gt;StringIdentity&lt;\/i&gt;&lt;\/a&gt;&quot;,&quot;changeable&quot;:&quot;&lt;i class=\&quot;fas fa-check\&quot;&gt;&lt;\/i&gt;&quot;,&quot;type&quot;:&quot;&lt;!-- EString--&gt; \r\n&lt;a href=\&quot;https://ecore.models.nasdanika.org/references/eClassifiers/EString/index.html\&quot;&gt;\r\n  &lt;img src=\&quot;https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EDataType.gif\&quot; class=\&quot;nsd-app-label-icon\&quot;/&gt;EString&lt;\/a&gt;&quot;},{&quot;name&quot;:&quot;\r\n&lt;a href=\&quot;https://ncore.models.nasdanika.org/references/eClassifiers/NamedElement/references/eStructuralFeatures/name/index.html\&quot; title=\&quot;Element name.\&quot;&gt;\r\n  &lt;img src=\&quot;https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EAttribute.gif\&quot; class=\&quot;nsd-app-label-icon\&quot;/&gt;name&lt;\/a&gt;&quot;,&quot;description&quot;:&quot;Element name.&quot;,&quot;multiplicity&quot;:&quot;0..1&quot;,&quot;declaring-class&quot;:&quot;&lt;!-- NamedElement--&gt; \r\n&lt;a href=\&quot;https://ncore.models.nasdanika.org/references/eClassifiers/NamedElement/index.html\&quot; title=\&quot;A model element with name.\&quot;&gt;\r\n  &lt;img src=\&quot;https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif\&quot; class=\&quot;nsd-app-label-icon\&quot;/&gt;NamedElement&lt;\/a&gt;&quot;,&quot;changeable&quot;:&quot;&lt;i class=\&quot;fas fa-check\&quot;&gt;&lt;\/i&gt;&quot;,&quot;type&quot;:&quot;&lt;!-- EString--&gt; \r\n&lt;a href=\&quot;https://ecore.models.nasdanika.org/references/eClassifiers/EString/index.html\&quot;&gt;\r\n  &lt;img src=\&quot;https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EDataType.gif\&quot; class=\&quot;nsd-app-label-icon\&quot;/&gt;EString&lt;\/a&gt;&quot;},{&quot;name&quot;:&quot;\r\n&lt;a href=\&quot;https://ncore.models.nasdanika.org/references/eClassifiers/ModelElement/references/eStructuralFeatures/uris/index.html\&quot; title=\&quot;Element URI's - there might be more than one. See ``NcoreUtil.getUris()`` for more details.\nURI's can be used for cross-referencing of elements in a resource-independent fashion.\n\&quot;&gt;\r\n  &lt;img src=\&quot;https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EAttribute.gif\&quot; class=\&quot;nsd-app-label-icon\&quot;/&gt;uris&lt;\/a&gt;&quot;,&quot;description&quot;:&quot;Element URI's - there might be more than one. See ``NcoreUtil.getUris()`` for more details.\nURI's can be used for cross-referencing of elements in a resource-independent fashion.\n&quot;,&quot;multiplicity&quot;:&quot;0..*&quot;,&quot;declaring-class&quot;:&quot;&lt;!-- ModelElement--&gt; \r\n&lt;a href=\&quot;https://ncore.models.nasdanika.org/references/eClassifiers/ModelElement/index.html\&quot; title=\&quot;Base class for many Nasdanika model classes.\&quot;&gt;\r\n  &lt;img src=\&quot;https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif\&quot; class=\&quot;nsd-app-label-icon\&quot;/&gt;&lt;i&gt;ModelElement&lt;\/i&gt;&lt;\/a&gt;&quot;,&quot;changeable&quot;:&quot;&lt;i class=\&quot;fas fa-check\&quot;&gt;&lt;\/i&gt;&quot;,&quot;type&quot;:&quot;&lt;!-- EString--&gt; \r\n&lt;a href=\&quot;https://ecore.models.nasdanika.org/references/eClassifiers/EString/index.html\&quot;&gt;\r\n  &lt;img src=\&quot;https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EDataType.gif\&quot; class=\&quot;nsd-app-label-icon\&quot;/&gt;EString&lt;\/a&gt;&quot;},{&quot;name&quot;:&quot;\r\n&lt;a href=\&quot;https://ncore.models.nasdanika.org/references/eClassifiers/ModelElement/references/eStructuralFeatures/uuid/index.html\&quot; title=\&quot;Optional unique identifier for this model element. For root objects UUID is used to compute URI, if the URI is not set.\&quot;&gt;\r\n  &lt;img src=\&quot;https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EAttribute.gif\&quot; class=\&quot;nsd-app-label-icon\&quot;/&gt;uuid&lt;\/a&gt;&quot;,&quot;description&quot;:&quot;Optional unique identifier for this model element. For root objects UUID is used to compute URI, if the URI is not set.&quot;,&quot;multiplicity&quot;:&quot;0..1&quot;,&quot;declaring-class&quot;:&quot;&lt;!-- ModelElement--&gt; \r\n&lt;a href=\&quot;https://ncore.models.nasdanika.org/references/eClassifiers/ModelElement/index.html\&quot; title=\&quot;Base class for many Nasdanika model classes.\&quot;&gt;\r\n  &lt;img src=\&quot;https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif\&quot; class=\&quot;nsd-app-label-icon\&quot;/&gt;&lt;i&gt;ModelElement&lt;\/i&gt;&lt;\/a&gt;&quot;,&quot;changeable&quot;:&quot;&lt;i class=\&quot;fas fa-check\&quot;&gt;&lt;\/i&gt;&quot;,&quot;type&quot;:&quot;&lt;!-- EString--&gt; \r\n&lt;a href=\&quot;https://ecore.models.nasdanika.org/references/eClassifiers/EString/index.html\&quot;&gt;\r\n  &lt;img src=\&quot;https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EDataType.gif\&quot; class=\&quot;nsd-app-label-icon\&quot;/&gt;EString&lt;\/a&gt;&quot;}]" config-key="eclass-attributes" transitive-label="Inherited"/>
   </div>
   <script>new Vue({ el: '#attributes-table' });</script>
 </div></div>
@@ -189,7 +153,7 @@ window.nsdJsTreeSearchCallback = function(str, node) {
         <div class="col nsd-app-footer">
           <ul class="nav nsd-app-footer-navs">
             <li class="nav-item">
-              <a href="https://github.com/Nasdanika-Models/party" data-nsd-label-uuid="a506a544-b4ff-4564-9b7d-6d9f184e0e66" class="nav-link"><span class="fab fa-github nsd-app-label-icon"></span>Sources</a>
+              <a href="https://github.com/Nasdanika-Models/party" data-nsd-label-uuid="f6eb7b72-a15c-40fd-93c3-1df8ab071d20" class="nav-link"><span class="fab fa-github nsd-app-label-icon"></span>Sources</a>
             </li>
           </ul>
         </div>
