@@ -18,7 +18,7 @@ import org.nasdanika.ncore.DocumentedNamedStringIdentity;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.nasdanika.models.party.Role#getPlayers <em>Players</em>}</li>
+ *   <li>{@link org.nasdanika.models.party.Role#getActors <em>Actors</em>}</li>
  * </ul>
  *
  * @see org.nasdanika.models.party.PartyPackage#getRole()
@@ -27,18 +27,18 @@ import org.nasdanika.ncore.DocumentedNamedStringIdentity;
  */
 public interface Role extends DocumentedNamedStringIdentity {
 	/**
-	 * Returns the value of the '<em><b>Players</b></em>' reference list.
+	 * Returns the value of the '<em><b>Actors</b></em>' reference list.
 	 * The list contents are of type {@link org.nasdanika.models.party.Party}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * Parties playing this role
 	 * <!-- end-model-doc -->
-	 * @return the value of the '<em>Players</em>' reference list.
-	 * @see org.nasdanika.models.party.PartyPackage#getRole_Players()
+	 * @return the value of the '<em>Actors</em>' reference list.
+	 * @see org.nasdanika.models.party.PartyPackage#getRole_Actors()
 	 * @model
 	 * @generated
 	 */
-	EList<Party> getPlayers();
+	EList<Party> getActors();
 
 } // Role

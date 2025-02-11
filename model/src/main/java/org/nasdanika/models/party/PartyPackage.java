@@ -303,13 +303,13 @@ public interface PartyPackage extends EPackage {
 	int ROLE__ID = NcorePackage.DOCUMENTED_NAMED_STRING_IDENTITY__ID;
 
 	/**
-	 * The feature id for the '<em><b>Players</b></em>' reference list.
+	 * The feature id for the '<em><b>Actors</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ROLE__PLAYERS = NcorePackage.DOCUMENTED_NAMED_STRING_IDENTITY_FEATURE_COUNT + 0;
+	int ROLE__ACTORS = NcorePackage.DOCUMENTED_NAMED_STRING_IDENTITY_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>Role</em>' class.
@@ -1386,15 +1386,15 @@ public interface PartyPackage extends EPackage {
 	EClass getRole();
 
 	/**
-	 * Returns the meta object for the reference list '{@link org.nasdanika.models.party.Role#getPlayers <em>Players</em>}'.
+	 * Returns the meta object for the reference list '{@link org.nasdanika.models.party.Role#getActors <em>Actors</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Players</em>'.
-	 * @see org.nasdanika.models.party.Role#getPlayers()
+	 * @return the meta object for the reference list '<em>Actors</em>'.
+	 * @see org.nasdanika.models.party.Role#getActors()
 	 * @see #getRole()
 	 * @generated
 	 */
-	EReference getRole_Players();
+	EReference getRole_Actors();
 
 	/**
 	 * Returns the meta object for class '{@link org.nasdanika.models.party.Organization <em>Organization</em>}'.
@@ -1661,12 +1661,12 @@ public interface PartyPackage extends EPackage {
 		EClass ROLE = eINSTANCE.getRole();
 
 		/**
-		 * The meta object literal for the '<em><b>Players</b></em>' reference list feature.
+		 * The meta object literal for the '<em><b>Actors</b></em>' reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ROLE__PLAYERS = eINSTANCE.getRole_Players();
+		EReference ROLE__ACTORS = eINSTANCE.getRole_Actors();
 
 		/**
 		 * The meta object literal for the '{@link org.nasdanika.models.party.impl.OrganizationImpl <em>Organization</em>}' class.

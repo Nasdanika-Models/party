@@ -191,7 +191,7 @@ public class PartyPackageImpl extends EPackageImpl implements PartyPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getRole_Players() {
+	public EReference getRole_Actors() {
 		return (EReference)roleEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -428,7 +428,7 @@ public class PartyPackageImpl extends EPackageImpl implements PartyPackage {
 		createEReference(partyEClass, PARTY__CONTACT_METHODS);
 
 		roleEClass = createEClass(ROLE);
-		createEReference(roleEClass, ROLE__PLAYERS);
+		createEReference(roleEClass, ROLE__ACTORS);
 
 		organizationEClass = createEClass(ORGANIZATION);
 		createEReference(organizationEClass, ORGANIZATION__ROLES);
@@ -504,7 +504,7 @@ public class PartyPackageImpl extends EPackageImpl implements PartyPackage {
 		initEReference(getParty_ContactMethods(), this.getContactMethod(), null, "contactMethods", null, 0, -1, Party.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(roleEClass, Role.class, "Role", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getRole_Players(), this.getParty(), null, "players", null, 0, -1, Role.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getRole_Actors(), this.getParty(), null, "actors", null, 0, -1, Role.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(organizationEClass, Organization.class, "Organization", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getOrganization_Roles(), this.getRole(), null, "roles", null, 0, -1, Organization.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -571,7 +571,7 @@ public class PartyPackageImpl extends EPackageImpl implements PartyPackage {
 			   "documentation", "A role played by a party in an organization. Subclasses may reference a shared role definition"
 		   });
 		addAnnotation
-		  (getRole_Players(),
+		  (getRole_Actors(),
 		   source,
 		   new String[] {
 			   "documentation", "Parties playing this role"

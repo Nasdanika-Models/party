@@ -16,7 +16,7 @@
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="A role played by a party in an organization. Subclasses may reference a shared role definition"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="players" upperBound="-1"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="actors" upperBound="-1"
         eType="#//Party">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="Parties playing this role"/>

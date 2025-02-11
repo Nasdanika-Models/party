@@ -20,7 +20,7 @@ import org.nasdanika.ncore.impl.DocumentedNamedStringIdentityImpl;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link org.nasdanika.models.party.impl.RoleImpl#getPlayers <em>Players</em>}</li>
+ *   <li>{@link org.nasdanika.models.party.impl.RoleImpl#getActors <em>Actors</em>}</li>
  * </ul>
  *
  * @generated
@@ -52,8 +52,8 @@ public class RoleImpl extends DocumentedNamedStringIdentityImpl implements Role 
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public EList<Party> getPlayers() {
-		return (EList<Party>)eDynamicGet(PartyPackage.ROLE__PLAYERS, PartyPackage.Literals.ROLE__PLAYERS, true, true);
+	public EList<Party> getActors() {
+		return (EList<Party>)eDynamicGet(PartyPackage.ROLE__ACTORS, PartyPackage.Literals.ROLE__ACTORS, true, true);
 	}
 
 	/**
@@ -64,8 +64,8 @@ public class RoleImpl extends DocumentedNamedStringIdentityImpl implements Role 
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case PartyPackage.ROLE__PLAYERS:
-				return getPlayers();
+			case PartyPackage.ROLE__ACTORS:
+				return getActors();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -79,9 +79,9 @@ public class RoleImpl extends DocumentedNamedStringIdentityImpl implements Role 
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case PartyPackage.ROLE__PLAYERS:
-				getPlayers().clear();
-				getPlayers().addAll((Collection<? extends Party>)newValue);
+			case PartyPackage.ROLE__ACTORS:
+				getActors().clear();
+				getActors().addAll((Collection<? extends Party>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -95,8 +95,8 @@ public class RoleImpl extends DocumentedNamedStringIdentityImpl implements Role 
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case PartyPackage.ROLE__PLAYERS:
-				getPlayers().clear();
+			case PartyPackage.ROLE__ACTORS:
+				getActors().clear();
 				return;
 		}
 		super.eUnset(featureID);
@@ -110,8 +110,8 @@ public class RoleImpl extends DocumentedNamedStringIdentityImpl implements Role 
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case PartyPackage.ROLE__PLAYERS:
-				return !getPlayers().isEmpty();
+			case PartyPackage.ROLE__ACTORS:
+				return !getActors().isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}
