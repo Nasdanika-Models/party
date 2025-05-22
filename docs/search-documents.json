@@ -1,191 +1,224 @@
 {
   "references/eClassifiers/Person/inheritance.html": {
     "path": "Person/Inheritance",
-    "link-uuid": "460eaaf1-cac0-40e6-943c-040066c5ce7b",
+    "link-uuid": "e0750ef0-ba2d-4883-8c13-1deeb24f7485",
     "title": "Inheritance",
-    "content": "Supertypes "
+    "content": "Supertypes ",
+    "timestamp": 1747875935341
   },
   "references/eClassifiers/WebAddress/references/eStructuralFeatures/url/index.html": {
     "path": "WebAddress/Attributes/url",
-    "link-uuid": "fc8b2e6a-37b8-4b9b-8e3c-0e3087efdc2d",
+    "link-uuid": "2e02a261-73bd-49ac-bb58-d2fefc51bbb6",
     "title": "url",
-    "content": "Type EString Multiplicity 0..1 URL."
+    "content": "Type EString Multiplicity 0..1 URL.",
+    "timestamp": 1747875935413
   },
   "references/eClassifiers/Role/index.html": {
-    "link-uuid": "aefa88f6-7d6d-4787-905c-d51ae431bc4c",
+    "link-uuid": "4b5cfd36-f831-467b-8ad6-98aeef86ce6d",
     "title": "Role",
-    "content": "A role played by a party in an organization. Subclasses may reference a shared role definition"
+    "content": "A role played by a party in an organization. Subclasses may reference a shared role definition",
+    "timestamp": 1747875935395
   },
   "references/eClassifiers/Organization/index.html": {
-    "link-uuid": "0cd418c3-549a-4591-9388-e9a36eb90876",
+    "link-uuid": "10eebddb-83da-432b-9918-22873770225f",
     "title": "Organization",
-    "content": "A grop of parties in roles collaborating to achieve some goal or perform some function"
+    "content": "A grop of parties in roles collaborating to achieve some goal or perform some function",
+    "timestamp": 1747875935313
   },
   "references/eClassifiers/Phone/references/eStructuralFeatures/phoneNumber/index.html": {
     "path": "Phone/Attributes/phoneNumber",
-    "link-uuid": "afc998c6-2aac-4a02-81c8-b0d1c97ae258",
+    "link-uuid": "107cd6c6-2f43-49ea-ba09-64bad04fcc8c",
     "title": "phoneNumber",
-    "content": "Type EInt Multiplicity 0..1 Phone number."
+    "content": "Type EInt Multiplicity 0..1 Phone number.",
+    "timestamp": 1747875935360
   },
   "references/eClassifiers/Phone/index.html": {
-    "link-uuid": "68ad5ae3-3c28-4c92-8473-8ae1b17902ab",
+    "link-uuid": "d384daeb-4810-4a49-9975-af73eb9f5306",
     "title": "Phone",
-    "content": "Phone."
+    "content": "Phone.",
+    "timestamp": 1747875935352
   },
   "references/eClassifiers/ContactMethod/index.html": {
-    "link-uuid": "09744512-eda9-48f1-b085-fdb2873e4059",
+    "link-uuid": "36d67659-f34b-4224-9a5d-4d1ef1857a8f",
     "title": "ContactMethod",
-    "content": "Generic contact method."
+    "content": "Generic contact method.",
+    "timestamp": 1747875935283
   },
   "references/eClassifiers/Party/index.html": {
-    "link-uuid": "6a96693d-c593-4af1-8588-976cc242f6a6",
+    "link-uuid": "a5bf60e8-2905-4056-a765-3fcf97e143a2",
     "title": "Party",
-    "content": "Something that can particpate/play role in something - a person, organization, system"
+    "content": "Something that can particpate/play role in something - a person, organization, system",
+    "timestamp": 1747875935328
   },
   "references/eClassifiers/WebAddress/index.html": {
-    "link-uuid": "6e7b38bf-f54b-4982-a37a-7ca85680f6b5",
+    "link-uuid": "71e17ba6-cf9b-4fe0-a07b-5f2f66e1b8aa",
     "title": "WebAddress",
-    "content": "URL."
+    "content": "URL.",
+    "timestamp": 1747875935409
   },
   "references/eClassifiers/Phone/references/eStructuralFeatures/extension/index.html": {
     "path": "Phone/Attributes/extension",
-    "link-uuid": "0a535204-83c5-4548-91c6-f3ea82a7e665",
+    "link-uuid": "5ba83839-be87-4a1c-a9cf-18bfb9687506",
     "title": "extension",
-    "content": "Type EInt Multiplicity 0..1 Optional extension."
+    "content": "Type EInt Multiplicity 0..1 Optional extension.",
+    "timestamp": 1747875935359
   },
   "references/eClassifiers/PostalAddress/inheritance.html": {
     "path": "PostalAddress/Inheritance",
-    "link-uuid": "88d8a732-96d8-446d-ab03-fa4eb89f7048",
+    "link-uuid": "76dbd97c-a5c9-46e2-b2f0-784cde0852a5",
     "title": "Inheritance",
-    "content": "Supertypes "
+    "content": "Supertypes ",
+    "timestamp": 1747875935371
   },
   "references/eClassifiers/PostalAddress/references/eStructuralFeatures/line1/index.html": {
     "path": "PostalAddress/Attributes/line1",
-    "link-uuid": "35b53acc-3571-4bd9-9f2e-d6e625d91d57",
+    "link-uuid": "d21b3782-b69c-4255-8fe4-7e82413e763f",
     "title": "line1",
-    "content": "Type EString Multiplicity 0..1 Address line 1."
+    "content": "Type EString Multiplicity 0..1 Address line 1.",
+    "timestamp": 1747875935380
   },
   "references/eClassifiers/WebAddress/inheritance.html": {
     "path": "WebAddress/Inheritance",
-    "link-uuid": "f30e050e-e4a1-469e-a27f-ef36361dd375",
+    "link-uuid": "1c5eb8fe-003c-42c1-950d-16e394b01db7",
     "title": "Inheritance",
-    "content": "Supertypes "
+    "content": "Supertypes ",
+    "timestamp": 1747875935411
   },
   "references/eClassifiers/Organization/references/eStructuralFeatures/roles/index.html": {
     "path": "Organization/References/roles",
-    "link-uuid": "a1740ff8-8af7-41aa-9c9b-32f13da65324",
+    "link-uuid": "dbadae57-27f0-4d9c-aca0-678d6508eac0",
     "title": "roles",
-    "content": "Type Role Multiplicity 0..* Organization members."
+    "content": "Type Role Multiplicity 0..* Organization members.",
+    "timestamp": 1747875935317
   },
   "references/eClassifiers/EMail/inheritance.html": {
     "path": "EMail/Inheritance",
-    "link-uuid": "70cbb302-b756-45b5-bebc-4786815916cd",
+    "link-uuid": "f450047c-1bb1-4a87-9ae8-c344c988bad2",
     "title": "Inheritance",
-    "content": "Supertypes "
+    "content": "Supertypes ",
+    "timestamp": 1747875935300
   },
   "references/eClassifiers/EMail/references/eStructuralFeatures/eMailAddress/index.html": {
     "path": "EMail/Attributes/eMailAddress",
-    "link-uuid": "b08bcfc1-484d-4929-873c-718e7ecd8ee3",
+    "link-uuid": "d0bd5170-8026-4bfe-b893-54326a98ad82",
     "title": "eMailAddress",
-    "content": "Type EString Multiplicity 0..1 E-Mail address."
+    "content": "Type EString Multiplicity 0..1 E-Mail address.",
+    "timestamp": 1747875935303
   },
   "references/eClassifiers/Party/inheritance.html": {
     "path": "Party/Inheritance",
-    "link-uuid": "eceb2d9d-259a-46b3-97af-75f1291be39c",
+    "link-uuid": "0186c817-e473-40b7-86c3-2078969f5776",
     "title": "Inheritance",
-    "content": "Supertypes Subtypes  "
+    "content": "Supertypes Subtypes  ",
+    "timestamp": 1747875935329
   },
   "references/eClassifiers/EMail/index.html": {
-    "link-uuid": "dc521948-0583-42d6-9d8a-d1d4bf1205d8",
+    "link-uuid": "fa3c57cf-ddf2-4b11-ada5-0b222a9aa0bf",
     "title": "EMail",
-    "content": "E-mail address."
+    "content": "E-mail address.",
+    "timestamp": 1747875935299
   },
   "references/eClassifiers/Person/index.html": {
-    "link-uuid": "7b6add6c-9c56-4b40-8777-794743461c0c",
+    "link-uuid": "697ee789-fadd-41e0-8d7e-394c26d7d2a9",
     "title": "Person",
-    "content": "A human party."
+    "content": "A human party.",
+    "timestamp": 1747875935339
   },
   "references/eClassifiers/Phone/references/eStructuralFeatures/areaCode/index.html": {
     "path": "Phone/Attributes/areaCode",
-    "link-uuid": "a8503cfe-5414-454e-9132-19154937fbf9",
+    "link-uuid": "2899dd7a-a75f-4dbb-b243-bf69f74cd3c0",
     "title": "areaCode",
-    "content": "Type EInt Multiplicity 0..1 Area code."
+    "content": "Type EInt Multiplicity 0..1 Area code.",
+    "timestamp": 1747875935357
   },
   "references/eClassifiers/Phone/references/eStructuralFeatures/countryCode/index.html": {
     "path": "Phone/Attributes/countryCode",
-    "link-uuid": "e7a3c76b-8987-4be3-9d7a-f6645e9fb8b0",
+    "link-uuid": "751edbf7-81a6-4c27-b9d8-6d1c728fc83e",
     "title": "countryCode",
-    "content": "Type EInt Multiplicity 0..1 Country code."
+    "content": "Type EInt Multiplicity 0..1 Country code.",
+    "timestamp": 1747875935358
   },
   "references/eClassifiers/PostalAddress/references/eStructuralFeatures/stateProvince/index.html": {
     "path": "PostalAddress/Attributes/stateProvince",
-    "link-uuid": "798e6e94-c0c7-477c-856e-eb5af28207d0",
+    "link-uuid": "9858f1b9-2083-474c-bd90-ff2b8f673ba7",
     "title": "stateProvince",
-    "content": "Type EString Multiplicity 0..1 State or province or region"
+    "content": "Type EString Multiplicity 0..1 State or province or region",
+    "timestamp": 1747875935386
   },
   "references/eClassifiers/ContactMethod/inheritance.html": {
     "path": "ContactMethod/Inheritance",
-    "link-uuid": "11a9782b-2483-4214-a35b-d38530dae4bd",
+    "link-uuid": "0e4d32b0-db42-4f66-8c57-6988b8191333",
     "title": "Inheritance",
-    "content": "Supertypes Subtypes  "
+    "content": "Supertypes Subtypes  ",
+    "timestamp": 1747875935285
   },
   "references/eClassifiers/PostalAddress/references/eStructuralFeatures/line2/index.html": {
     "path": "PostalAddress/Attributes/line2",
-    "link-uuid": "042a80a0-cd8e-41ac-9f53-602ef6b07949",
+    "link-uuid": "ce366cbd-4df7-4814-82f4-31e362db002d",
     "title": "line2",
-    "content": "Type EString Multiplicity 0..1 Address line 2."
+    "content": "Type EString Multiplicity 0..1 Address line 2.",
+    "timestamp": 1747875935383
   },
   "references/eClassifiers/PostalAddress/references/eStructuralFeatures/city/index.html": {
     "path": "PostalAddress/Attributes/city",
-    "link-uuid": "b6228d80-b1e2-40ea-b1fc-b29c380b4258",
+    "link-uuid": "b8690630-703f-416c-85ee-dbb4c28587bb",
     "title": "city",
-    "content": "Type EString Multiplicity 0..1 City/town"
+    "content": "Type EString Multiplicity 0..1 City/town",
+    "timestamp": 1747875935373
   },
   "references/eClassifiers/PostalAddress/references/eStructuralFeatures/country/index.html": {
     "path": "PostalAddress/Attributes/country",
-    "link-uuid": "9d2777d5-2c26-4154-8ca1-b88044a2d7d2",
+    "link-uuid": "79b26901-65f9-4cdf-bdd1-8881fd9cc027",
     "title": "country",
-    "content": "Type EString Multiplicity 0..1 Country."
+    "content": "Type EString Multiplicity 0..1 Country.",
+    "timestamp": 1747875935379
   },
   "references/eClassifiers/Party/references/eStructuralFeatures/contactMethods/index.html": {
     "path": "Party/References/contactMethods",
-    "link-uuid": "2571589a-d727-43c2-893f-b161283dbe68",
+    "link-uuid": "22a5d0d1-8898-4b25-9298-7671915eea4c",
     "title": "contactMethods",
-    "content": "Type ContactMethod Multiplicity 0..* Party can have zero or more contact methods."
+    "content": "Type ContactMethod Multiplicity 0..* Party can have zero or more contact methods.",
+    "timestamp": 1747875935331
   },
   "references/eClassifiers/PostalAddress/index.html": {
-    "link-uuid": "116c973a-905f-4e17-a463-678849e55c88",
+    "link-uuid": "db3c03f3-442b-4061-9fb9-1c38a6afeb49",
     "title": "PostalAddress",
-    "content": "Postal Address."
+    "content": "Postal Address.",
+    "timestamp": 1747875935369
   },
   "references/eClassifiers/Role/references/eStructuralFeatures/actors/index.html": {
     "path": "Role/References/actors",
-    "link-uuid": "cb7234c6-9fd8-43b8-b8f0-9172474e1fe5",
+    "link-uuid": "6ebdfdf6-d66c-434e-bd63-e264c72371dd",
     "title": "actors",
-    "content": "Type Party Multiplicity 0..* Parties playing this role"
+    "content": "Type Party Multiplicity 0..* Parties playing this role",
+    "timestamp": 1747875935400
   },
   "references/eClassifiers/PostalAddress/references/eStructuralFeatures/postalCode/index.html": {
     "path": "PostalAddress/Attributes/postalCode",
-    "link-uuid": "266a123b-6423-4b19-9389-f44f13368b69",
+    "link-uuid": "72398df2-bf53-4030-8658-6ca2562028c4",
     "title": "postalCode",
-    "content": "Type EString Multiplicity 0..1 Postal/zip code."
+    "content": "Type EString Multiplicity 0..1 Postal/zip code.",
+    "timestamp": 1747875935384
   },
   "references/eClassifiers/Phone/inheritance.html": {
     "path": "Phone/Inheritance",
-    "link-uuid": "5a6309d6-3393-463c-8feb-afcd9a5a150b",
+    "link-uuid": "7bead152-cf14-4a8d-82fa-18336f4cd17e",
     "title": "Inheritance",
-    "content": "Supertypes "
+    "content": "Supertypes ",
+    "timestamp": 1747875935353
   },
   "references/eClassifiers/Organization/inheritance.html": {
     "path": "Organization/Inheritance",
-    "link-uuid": "38784de7-f858-4e96-97d9-38391dd34a69",
+    "link-uuid": "c7fc3819-34e9-482d-bb74-22c867edaae0",
     "title": "Inheritance",
-    "content": "Supertypes "
+    "content": "Supertypes ",
+    "timestamp": 1747875935314
   },
   "references/eClassifiers/Role/inheritance.html": {
     "path": "Role/Inheritance",
-    "link-uuid": "92df571d-80e2-47d0-b211-efa2bb09ba8c",
+    "link-uuid": "d49bc076-52f9-4f45-aa0a-27123ce234c5",
     "title": "Inheritance",
-    "content": "Supertypes "
+    "content": "Supertypes ",
+    "timestamp": 1747875935397
   }
 }
